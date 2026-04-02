@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UI Showcase</title>
+    <meta name="description" content="Showcase of UI components and designs.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="stylesheet" href="../styles/ui.css"/>
+</head>
+<body>
+    <nav class="ui-topnav" aria-label="Navegacion de bloques">
+        <a href="#bloque-acciones-rapidas">Quick actions</a>
+        <a href="#bloque-inputs-forms">Inputs and Forms</a>
+        <a href="#bloque-feedback-states">Feedback and States</a>
+        <a href="#bloque-navegacion">Navigation</a>
+        <a href="#bloque-content">Show and hide content</a>
+        <a href="#bloque-overlays">Overlays</a>
+        <a href="#bloque-content-display">Content display</a>
+        <a href="#bloque-data-display">Data display</a>
+        <a href="#bloque-layout-systems">Layout Systems</a>
+        <a href="#bloque-utilities">Utilities</a>
+        <a href="#bloque-advanced">Advanced Components</a>
+    </nav>
+
+    <button class="ui-floating-mobile-trigger js-mobile-trigger" type="button" aria-expanded="false" aria-controls="ui-mobile-menu" aria-label="Abrir menu movil">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <section class="ui-showcase container">
+        <div class="ui-showcase-header">
+            <h1>UI Showcase</h1>
+            <p>Una coleccion de componentes modernos y experimentos visuales personales.</p>
+        </div>
+
+        <div id="bloque-acciones-rapidas" class="ui-block">
+            <h2>Quick actions</h2>
+
+            <div id="seccion-1" class="ui-seccion-1">
+                <div class="ui-actions">
+                    <div class="ui-category">
+                        <h3>Botones</h3>
+                        <div class="ui-buttons">
+                            <button class="ui-btn ui-btn-primary"> Primario</button>
+                            <button class="ui-btn ui-btn-secondary"> Secundario</button>
+                            <button class="ui-btn ui-btn-danger"> Peligro</button>
+                            <div class="ui-btn-pair">
+                                <button class="ui-btn ui-btn-success"> Exito</button>
+                                <button class="ui-btn ui-btn-warning"> Fantasma</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-category">
+                        <h3>Badges</h3>
+                        <div class="ui-badges">
+                            <p class="ui-badge ui-badges-new">Nuevo</p>
+                            <p class="ui-badge ui-badges-hot">Hot</p>
+                            <p class="ui-badge ui-badges-popular">Popular</p>
+                            <p class="ui-badge ui-badges-success">Exito</p>
+                            <div class="ui-badge-pair">
+                                <p class="ui-badge ui-badges-verified">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"></path></svg>
+                                    Verificado
+                                </p>
+                                <p class="ui-badge ui-badge-bs-info">badge</p>
+                                <p class="ui-badge ui-badges-alert">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+                                    Alerta
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="seccion-2" class="ui-seccion-2">
+                <div class="ui-lower-sections">
+                    <div class="ui-chips-category">
+                        <h3>Chips</h3>
+                        <div class="ui-chips">
+                            <p class="ui-chip">HTML <span class="ui-chip-close">&times;</span></p>
+                            <p class="ui-chip">CSS <span class="ui-chip-close">&times;</span></p>
+                            <p class="ui-chip">JavaScript <span class="ui-chip-close">&times;</span></p>
+                            <p class="ui-chip">CPP <span class="ui-chip-close">&times;</span></p>
+                            <div class="ui-chip ui-chip-input">
+                                <input class="ui-chip-input-field" type="text" placeholder="NEW CHIP" aria-label="Nuevo chip" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-tags-category">
+                        <h3>Tags</h3>
+                        <div class="ui-tags">
+                            <p class="ui-tag ui-tag-design">#design</p>
+                            <p class="ui-tag ui-tag-ui">#ui</p>
+                            <p class="ui-tag ui-tag-development">#development</p>
+                            <div class="ui-tag-pair">
+                                <p class="ui-tag ui-tag-frontend">#frontend</p>
+                                <p class="ui-tag ui-tag-showcase">#showcase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="seccion-3" class="ui-seccion-3">
+                <div class="ui-seccion-3-grid">
+                    <div class="ui-seccion-3-category">
+                        <h3>Icon Buttons</h3>
+                        <div class="ui-icon-buttons">
+                            <button class="ui-icon-btn" aria-label="Favorite"><i class="fa-solid fa-heart"></i></button>
+                            <button class="ui-icon-btn" aria-label="Share"><i class="fa-solid fa-share-nodes"></i></button>
+                            <button class="ui-icon-btn" aria-label="Edit"><i class="fa-solid fa-pen"></i></button>
+                            <button class="ui-icon-btn" aria-label="Delete"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="ui-seccion-3-category">
+                        <h3>Other Buttons</h3>
+                        <div class="ui-other-buttons">
+                            <div class="ui-button-group" role="group" aria-label="Button group example">
+                                <button class="ui-group-btn is-active">Left</button>
+                                <button class="ui-group-btn">Center</button>
+                                <button class="ui-group-btn">Right</button>
+                            </div>
+
+                            <button class="ui-loading-btn" aria-live="polite">
+                                <span class="ui-loading-spinner" aria-hidden="true"></span>
+                                Loading...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="bloque-inputs-forms" class="ui-block">
+            <h2>Inputs and Forms</h2>
+
+            <div class="ui-inputs">
+                <div class="ui-input-row">
+                    <div class="ui-input-section">
+                        <h3>Input + Textarea</h3>
+                        <input class="ui-field" type="text" placeholder="Nombre completo" />
+                        <textarea class="ui-field ui-textarea" rows="3" placeholder="Escribe un mensaje"></textarea>
+                    </div>
+
+                    <div class="ui-input-section">
+                        <h3>Select + Switch</h3>
+                        <select class="ui-field">
+                            <option>Selecciona una opcion</option>
+                            <option>Opcion 1</option>
+                            <option>Opcion 2</option>
+                            <option>Opcion 3</option>
+                        </select>
+                        <label class="ui-switch">
+                            <input type="checkbox" checked />
+                            <span class="ui-switch-track"></span>
+                            <span>Modo rapido</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="ui-input-row">
+                    <div class="ui-input-section">
+                        <h3>Checkbox + Radio Group</h3>
+                        <div class="ui-check-combo">
+                            <div>
+                                <label class="ui-check-row"><input type="checkbox" checked /> Acepto terminos</label>
+                                <label class="ui-check-row"><input type="checkbox" /> Quiero notificaciones</label>
+                            </div>
+                            <div>
+                                <label class="ui-check-row"><input type="radio" name="plan" checked /> Basico</label>
+                                <label class="ui-check-row"><input type="radio" name="plan" /> Pro</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-input-section">
+                        <h3>Slider + Range Value</h3>
+                        <input class="ui-slider" type="range" min="0" max="100" value="45" />
+                        <div class="ui-range-row">
+                            <input class="ui-slider js-range-value" type="range" min="0" max="100" value="32" />
+                            <span class="ui-range-output" aria-live="polite">32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-input-row">
+                    <div class="ui-input-section">
+                        <h3>Search Input</h3>
+                        <div class="ui-icon-field ui-search-field">
+                            <button class="ui-field-icon-btn js-search-btn" type="button" aria-label="Buscar">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <input class="ui-field js-search-input" type="search" placeholder="Buscar tecnologia..." />
+                        </div>
+                        <ul class="ui-search-list js-search-list">
+                            <li>React</li>
+                            <li>Vue</li>
+                            <li>Svelte</li>
+                            <li>Angular</li>
+                            <li>Solid</li>
+                        </ul>
+                    </div>
+
+                    <div class="ui-input-section">
+                        <h3>OTP + Input con Icono</h3>
+                        <div class="ui-otp-wrap">
+                            <div class="ui-otp">
+                                <input class="ui-otp-digit" type="password" maxlength="1" inputmode="numeric" />
+                                <input class="ui-otp-digit" type="password" maxlength="1" inputmode="numeric" />
+                                <input class="ui-otp-digit" type="password" maxlength="1" inputmode="numeric" />
+                                <input class="ui-otp-digit" type="password" maxlength="1" inputmode="numeric" />
+                                <input class="ui-otp-digit" type="password" maxlength="1" inputmode="numeric" />
+                                <input class="ui-otp-digit" type="password" maxlength="1" inputmode="numeric" />
+                            </div>
+                            <button class="ui-inline-action js-toggle-otp" type="button">Mostrar OTP</button>
+                        </div>
+
+                        <div class="ui-icon-field">
+                            <span class="ui-field-icon"><i class="fa-regular fa-envelope"></i></span>
+                            <input class="ui-field" type="email" placeholder="Email" />
+                        </div>
+
+                        <div class="ui-icon-field">
+                            <span class="ui-field-icon"><i class="fa-regular fa-user"></i></span>
+                            <input class="ui-field js-password-input" type="password" placeholder="Password" />
+                            <button class="ui-field-icon-btn js-toggle-password" type="button" aria-label="Mostrar password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-input-row">
+                    <div class="ui-input-section">
+                        <h3>Input Disabled</h3>
+                        <input class="ui-field" type="text" value="No editable" disabled />
+                    </div>
+
+                    <div class="ui-input-section">
+                        <h3>Form Validation</h3>
+                        <div class="ui-validation-grid">
+                            <div class="ui-validation-item">
+                                <div class="ui-validation-field ui-validation-field-valid">
+                                    <input class="ui-field" type="email" value="valid@email.com" />
+                                    <i class="fa-regular fa-circle-check" aria-hidden="true"></i>
+                                </div>
+                                <small class="ui-help is-valid">Email is valid</small>
+                            </div>
+
+                            <div class="ui-validation-item">
+                                <div class="ui-validation-field ui-validation-field-invalid">
+                                    <input class="ui-field" type="text" value="invalid-email" />
+                                    <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                                </div>
+                                <small class="ui-help is-invalid">Please enter a valid email</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="bloque-feedback-states" class="ui-block">
+            <h2>Feedback and States</h2>
+
+            <div class="ui-feedback">
+                <div class="ui-feedback-row">
+                    <div class="ui-feedback-section">
+                        <h3>Alert</h3>
+                        <div class="ui-feedback-actions">
+                            <button class="ui-inline-action js-reset-alert" type="button">Restaurar</button>
+                        </div>
+                        <div class="ui-alert js-alert" role="alert">
+                            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                            <div>
+                                <strong>Alerta de sistema</strong>
+                                <p>Se detecto actividad inusual. Revisa la configuracion.</p>
+                            </div>
+                            <button class="ui-alert-close js-close-alert" type="button" aria-label="Cerrar alerta">&times;</button>
+                        </div>
+                    </div>
+
+                    <div class="ui-feedback-section">
+                        <h3>Toast</h3>
+                        <button class="ui-inline-action js-show-toast" type="button">Mostrar toast</button>
+                        <div class="ui-toast js-toast" role="status" aria-live="polite" hidden>
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                            <span>Cambios guardados correctamente</span>
+                            <button class="ui-toast-close js-close-toast" type="button" aria-label="Cerrar toast">&times;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-feedback-row">
+                    <div class="ui-feedback-section">
+                        <h3>Progress Bar</h3>
+                        <div class="ui-feedback-actions">
+                            <button class="ui-inline-action js-progress-down" type="button">-10</button>
+                            <button class="ui-inline-action js-progress-up" type="button">+10</button>
+                            <span class="ui-progress-value js-progress-value">68%</span>
+                        </div>
+                        <input class="ui-slider js-progress-control" type="range" min="0" max="100" value="68" />
+                        <div class="ui-progress js-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="68">
+                            <span class="ui-progress-fill js-progress-fill" style="width: 68%"></span>
+                        </div>
+                        <div class="ui-progress ui-progress-indeterminate" aria-hidden="true">
+                            <span class="ui-progress-fill"></span>
+                        </div>
+                    </div>
+
+                    <div class="ui-feedback-section">
+                        <h3>Spinner / Loader</h3>
+                        <div class="ui-feedback-actions">
+                            <button class="ui-inline-action js-toggle-loader" type="button">Pausar loader</button>
+                        </div>
+                        <div class="ui-loader-wrap js-loader-wrap" aria-label="Loading">
+                            <span class="ui-loader-ring"></span>
+                            <span class="ui-loader-dots"><span></span><span></span><span></span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-feedback-row">
+                    <div class="ui-feedback-section">
+                        <h3>Skeleton</h3>
+                        <div class="ui-feedback-actions">
+                            <button class="ui-inline-action js-toggle-skeleton" type="button">Cargar contenido</button>
+                        </div>
+                        <div class="ui-skeleton-card js-skeleton" aria-hidden="true">
+                            <span class="ui-skeleton-line ui-skeleton-title"></span>
+                            <span class="ui-skeleton-line"></span>
+                            <span class="ui-skeleton-line ui-skeleton-short"></span>
+                        </div>
+                        <div class="ui-loaded-card js-loaded-card" hidden>
+                            <strong>Reporte mensual</strong>
+                            <p>Contenido cargado correctamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="ui-feedback-section">
+                        <h3>Empty State</h3>
+                        <div class="ui-feedback-actions">
+                            <button class="ui-inline-action js-toggle-empty" type="button">Agregar item</button>
+                        </div>
+                        <div class="ui-empty-state js-empty-state">
+                            <i class="fa-regular fa-folder-open" aria-hidden="true"></i>
+                            <p>No hay elementos todavia</p>
+                            <small>Empieza creando tu primer registro.</small>
+                        </div>
+                        <ul class="ui-empty-list js-empty-list" hidden>
+                            <li>Item de ejemplo #1</li>
+                            <li>Item de ejemplo #2</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ui-feedback-row ui-feedback-row-states">
+                    <div class="ui-feedback-section">
+                        <h3>States</h3>
+                        <div class="ui-states-grid">
+                            <div class="ui-state ui-state-success js-state-toggle" tabindex="0" role="button" aria-pressed="false">
+                                <i class="fa-regular fa-circle-check" aria-hidden="true"></i>
+                                <span>Operacion completada.</span>
+                            </div>
+
+                            <div class="ui-state ui-state-error js-state-toggle" tabindex="0" role="button" aria-pressed="false">
+                                <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                                <span>Ha ocurrido un error.</span>
+                            </div>
+
+                            <div class="ui-state ui-state-warning js-state-toggle" tabindex="0" role="button" aria-pressed="false">
+                                <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                                <span>Requiere validacion manual.</span>
+                            </div>
+
+                            <div class="ui-state ui-state-info js-state-toggle" tabindex="0" role="button" aria-pressed="false">
+                                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                                <span>Nueva version disponible.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="bloque-navegacion" class="ui-block">
+            <h2>Navigation</h2>
+
+            <div class="ui-nav-showcase">
+                <div class="ui-nav-row">
+                    <div class="ui-nav-section">
+                        <h3>Tabs</h3>
+                        <div class="ui-tabs" role="tablist" aria-label="Ejemplo de tabs">
+                            <button class="ui-tab-btn js-tab-btn is-active" data-tab="overview" role="tab" aria-selected="true">Overview</button>
+                            <button class="ui-tab-btn js-tab-btn" data-tab="activity" role="tab" aria-selected="false">Activity</button>
+                            <button class="ui-tab-btn js-tab-btn" data-tab="settings" role="tab" aria-selected="false">Settings</button>
+                        </div>
+                        <div class="ui-tab-panel js-tab-panel" data-panel="overview">Vista general del espacio de trabajo.</div>
+                        <div class="ui-tab-panel js-tab-panel" data-panel="activity" hidden>Ultimos cambios y eventos recientes.</div>
+                        <div class="ui-tab-panel js-tab-panel" data-panel="settings" hidden>Preferencias de configuracion del usuario.</div>
+                    </div>
+
+                    <div class="ui-nav-section">
+                        <h3>Breadcrumb</h3>
+                        <nav class="ui-breadcrumb" aria-label="Breadcrumb">
+                            <a href="#">Home</a>
+                            <span>/</span>
+                            <a href="#">Dashboard</a>
+                            <span>/</span>
+                            <span aria-current="page">Analytics</span>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="ui-nav-row">
+                    <div class="ui-nav-section">
+                        <h3>Pagination</h3>
+                        <div class="ui-pagination" role="navigation" aria-label="Pagination">
+                            <button class="ui-page-btn js-page-prev" type="button">Prev</button>
+                            <button class="ui-page-btn js-page-number is-active" type="button" data-page="1">1</button>
+                            <button class="ui-page-btn js-page-number" type="button" data-page="2">2</button>
+                            <button class="ui-page-btn js-page-number" type="button" data-page="3">3</button>
+                            <button class="ui-page-btn js-page-number" type="button" data-page="4">4</button>
+                            <button class="ui-page-btn js-page-next" type="button">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="ui-nav-section">
+                        <h3>Menubar</h3>
+                        <div class="ui-menubar" role="menubar" aria-label="Menubar demo">
+                            <button class="ui-menu-btn js-menubar-trigger" type="button" data-menu="file" aria-expanded="false">File</button>
+                            <button class="ui-menu-btn js-menubar-trigger" type="button" data-menu="edit" aria-expanded="false">Edit</button>
+                            <button class="ui-menu-btn js-menubar-trigger" type="button" data-menu="view" aria-expanded="false">View</button>
+                        </div>
+                        <p class="ui-menubar-status js-menubar-status">Ningun archivo seleccionado.</p>
+                        <div class="ui-menu-popover js-menubar-popover" hidden>
+                            <p class="ui-menu-title js-menubar-title">View</p>
+                            <div class="js-menubar-items"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-nav-row">
+                    <div class="ui-nav-section">
+                        <h3>Navigation Menu</h3>
+                        <nav class="ui-nav-menu" aria-label="Primary menu">
+                            <button class="ui-nav-item js-nav-item is-active" type="button">Inicio</button>
+                            <button class="ui-nav-item js-nav-item" type="button">Productos</button>
+                            <button class="ui-nav-item js-nav-item" type="button">Precios</button>
+                            <button class="ui-nav-item js-nav-item" type="button">Contacto</button>
+                        </nav>
+                    </div>
+
+                    <div class="ui-nav-section">
+                        <h3>Stepper</h3>
+                        <div class="ui-stepper js-stepper" data-step="1">
+                            <div class="ui-step is-active"><span>1</span><small>Cuenta</small></div>
+                            <div class="ui-step"><span>2</span><small>Perfil</small></div>
+                            <div class="ui-step"><span>3</span><small>Confirmar</small></div>
+                        </div>
+                        <div class="ui-feedback-actions">
+                            <button class="ui-inline-action js-step-prev" type="button">Back</button>
+                            <button class="ui-inline-action js-step-next" type="button">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-nav-row ui-nav-row-single">
+                    <div class="ui-nav-section">
+                        <h3>Sidebar Nav</h3>
+                        <p class="ui-nav-helper">Controles de navegacion lateral y drawer inferior.</p>
+                        <div class="ui-sidebar-actions">
+                            <button class="ui-sidebar-item ui-sidebar-action js-mobile-trigger" type="button" aria-expanded="false" aria-controls="ui-mobile-menu">
+                                Abrir Sidebar Nav
+                            </button>
+                            <button class="ui-sidebar-item ui-sidebar-action js-open-bottom-drawer" type="button" aria-expanded="false" aria-controls="ui-bottom-drawer">
+                                Abrir Bottom Drawer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="bloque-content" class="ui-block">
+            <h2>Show and hide content</h2>
+
+            <div class="ui-content-showcase">
+                <div class="ui-content-row">
+                    <div class="ui-content-section">
+                        <h3>Accordion</h3>
+                        <div class="ui-accordion">
+                            <div class="ui-accordion-item js-accordion-item">
+                                <button class="ui-accordion-toggle js-accordion-toggle" type="button" aria-expanded="true">
+                                    Introduccion
+                                </button>
+                                <div class="ui-accordion-panel js-accordion-panel">
+                                    Esta seccion muestra contenido principal y resumen inicial.
+                                </div>
+                            </div>
+                            <div class="ui-accordion-item js-accordion-item">
+                                <button class="ui-accordion-toggle js-accordion-toggle" type="button" aria-expanded="false">
+                                    Detalles
+                                </button>
+                                <div class="ui-accordion-panel js-accordion-panel" hidden>
+                                    Aqui aparecen detalles adicionales del componente seleccionado.
+                                </div>
+                            </div>
+                            <div class="ui-accordion-item js-accordion-item">
+                                <button class="ui-accordion-toggle js-accordion-toggle" type="button" aria-expanded="false">
+                                    Recursos
+                                </button>
+                                <div class="ui-accordion-panel js-accordion-panel" hidden>
+                                    Enlaces y notas utiles para continuar explorando el contenido.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-content-section">
+                        <h3>Collapsible</h3>
+                        <button class="ui-inline-action js-collapsible-toggle" type="button" aria-expanded="false">
+                            Mostrar panel
+                        </button>
+                        <div class="ui-collapsible-panel js-collapsible-panel" hidden>
+                            Bloque expandible para mostrar informacion secundaria sin ocupar espacio fijo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-content-row">
+                    <div class="ui-content-section">
+                        <h3>Tooltip</h3>
+                        <div class="ui-tooltip-wrap">
+                            <button class="ui-tooltip-trigger" type="button" aria-describedby="ui-tooltip-info">
+                                Pasa el cursor aqui
+                            </button>
+                            <span id="ui-tooltip-info" class="ui-tooltip" role="tooltip">Mensaje breve de ayuda contextual.</span>
+                        </div>
+                    </div>
+
+                    <div class="ui-content-section">
+                        <h3>Hover Card</h3>
+                        <div class="ui-hover-card-wrap">
+                            <button class="ui-hover-card-trigger" type="button">Hover sobre este perfil</button>
+                            <article class="ui-hover-card" aria-label="Preview profile">
+                                <strong>Carla Rivera</strong>
+                                <p>Frontend Engineer enfocada en accesibilidad y performance.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-content-row">
+                    <div class="ui-content-section">
+                        <h3>Dropdown</h3>
+                        <div class="ui-dropdown js-dropdown">
+                            <button class="ui-inline-action js-dropdown-trigger" type="button" aria-expanded="false">
+                                Elegir opcion
+                            </button>
+                            <div class="ui-dropdown-menu js-dropdown-menu" hidden>
+                                <button class="js-dropdown-option" type="button">Design System</button>
+                                <button class="js-dropdown-option" type="button">Landing Page</button>
+                                <button class="js-dropdown-option" type="button">Dashboard</button>
+                            </div>
+                            <p class="ui-content-note js-dropdown-value">Seleccion actual: ninguna.</p>
+                        </div>
+                    </div>
+
+                    <div class="ui-content-section">
+                        <h3>Popover</h3>
+                        <div class="ui-popover-wrap">
+                            <button class="ui-inline-action js-popover-trigger" type="button" aria-expanded="false">
+                                Abrir popover
+                            </button>
+                            <div class="ui-popover js-popover" hidden>
+                                <p>Popover con acciones rapidas y descripcion corta.</p>
+                                <button class="ui-inline-action js-popover-close" type="button">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-content-row ui-content-row-single">
+                    <div class="ui-content-section">
+                        <h3>Context Menu</h3>
+                        <div class="ui-context-target js-context-target" tabindex="0" role="button">
+                            Click derecho o Shift + F10 para abrir el menu contextual.
+                        </div>
+                        <div class="ui-context-feedback js-context-feedback">Accion: ninguna.</div>
+                        <div class="ui-context-menu js-context-menu" hidden>
+                            <button class="js-context-action" type="button" data-action="Renombrar">Renombrar</button>
+                            <button class="js-context-action" type="button" data-action="Duplicar">Duplicar</button>
+                            <button class="js-context-action" type="button" data-action="Eliminar">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bloque-overlays" class="ui-block">
+            <h2>Overlays</h2>
+
+            <div class="ui-overlay-showcase">
+                <div class="ui-overlay-row">
+                    <div class="ui-overlay-section">
+                        <h3>Dialog / Modal</h3>
+                        <button class="ui-inline-action js-open-modal" type="button" aria-controls="ui-overlay-modal" aria-expanded="false">
+                            Abrir modal
+                        </button>
+                    </div>
+
+                    <div class="ui-overlay-section">
+                        <h3>Drawer + Sheet</h3>
+                        <button class="ui-inline-action js-open-bottom-drawer" type="button" aria-controls="ui-bottom-drawer" aria-expanded="false">
+                            Abrir drawer existente
+                        </button>
+                        <button class="ui-inline-action js-open-sheet" type="button" aria-controls="ui-left-sheet" aria-expanded="false">
+                            Abrir sheet lateral
+                        </button>
+                    </div>
+                </div>
+
+                <div class="ui-overlay-row">
+                    <div class="ui-overlay-section">
+                        <h3>Fullscreen Overlay</h3>
+                        <button class="ui-inline-action js-open-fullscreen-overlay" type="button" aria-controls="ui-fullscreen-overlay" aria-expanded="false">
+                            Abrir fullscreen
+                        </button>
+                    </div>
+
+                    <div class="ui-overlay-section">
+                        <h3>Command Palette</h3>
+                        <button class="ui-inline-action js-open-command-palette" type="button" aria-controls="ui-command-palette" aria-expanded="false">
+                            Abrir command palette
+                        </button>
+                        <p class="ui-overlay-note">Tip: tambien con Ctrl + K o Cmd + K.</p>
+                        <p class="ui-overlay-note js-command-feedback">Comando reciente: ninguno.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bloque-content-display" class="ui-block">
+            <h2>Content display</h2>
+
+            <div class="ui-display-showcase">
+                <div class="ui-display-row">
+                    <div class="ui-display-section">
+                        <h3>Cards</h3>
+                        <div class="ui-cards-grid">
+                            <article class="ui-display-card">
+                                <strong>Project Atlas</strong>
+                                <p>Dashboard con widgets adaptables y filtros en tiempo real.</p>
+                            </article>
+                            <article class="ui-display-card">
+                                <strong>Nova Landing</strong>
+                                <p>Landing animada para producto SaaS con enfoque en conversion.</p>
+                            </article>
+                            <article class="ui-display-card">
+                                <strong>Studio Notes</strong>
+                                <p>Bloc colaborativo con historial y atajos de teclado.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-section">
+                        <h3>Profile Card</h3>
+                        <article class="ui-profile-card">
+                            <div class="ui-avatar ui-avatar-md"><i class="fa-solid fa-code"></i></div>
+                            <div>
+                                <strong>Shakiara Feliciano</strong>
+                                <p>Estudiante</p>
+                                <small>Enfocada en crear interfaces web funcionales y atractivas mientras desarrollo mis habilidades en programación y diseño.</small>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="ui-display-row">
+                    <div class="ui-display-section">
+                        <h3>Product Card</h3>
+                        <article class="ui-product-card">
+                            <img src="https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?auto=format&fit=crop&w=500&q=80" alt="Audifonos inalambricos" />
+                            <div class="ui-product-info">
+                                <strong>WavePods X</strong>
+                                <p>Audio spatial, cancelacion activa y bateria de 30h.</p>
+                                <span>$129.00</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="ui-display-section">
+                        <h3>Stats Card</h3>
+                        <article class="ui-stats-card">
+                            <div><small>Revenue</small><strong>$48.2k</strong></div>
+                            <div><small>Orders</small><strong>1,203</strong></div>
+                            <div><small>Growth</small><strong>+18%</strong></div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="ui-display-row">
+                    <div class="ui-display-section">
+                        <h3>Avatar</h3>
+                        <div class="ui-avatar-row">
+                            <div class="ui-avatar ui-avatar-sm"><i class="fa-solid fa-user"></i></div>
+                            <div class="ui-avatar ui-avatar-md"><i class="fa-solid fa-star"></i></div>
+                            <div class="ui-avatar ui-avatar-lg"><i class="fa-solid fa-heart"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-section">
+                        <h3>Aspect Ratio Box</h3>
+                        <div class="ui-aspect-box">
+                            <span>16 : 9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-display-row">
+                    <div class="ui-display-section">
+                        <h3>Media Preview</h3>
+                        <div class="ui-media-preview">
+                            <video class="js-media-video" width="100%" height="140" style="border-radius: 8px; background: #1a1f2e;">
+                                <source src="../media/Emotional.mp4" type="video/mp4">
+                                Tu navegador no soporta video HTML5.
+                            </video>
+                            <div class="ui-media-controls">
+                                <div class="ui-media-controls-row">
+                                    <button class="ui-media-btn js-media-play" type="button"><i class="fa-solid fa-play"></i> Play</button>
+                                    <button class="ui-media-btn js-media-restart" type="button"><i class="fa-solid fa-rotate-left"></i> Reiniciar</button>
+                                    <button class="ui-media-btn js-media-mute" type="button"><i class="fa-solid fa-volume-high"></i> Sonido</button>
+                                    <input class="ui-media-volume js-media-volume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volumen" />
+                                    <span class="ui-media-time js-media-time">00:00 / 00:00</span>
+                                    <button class="ui-media-btn js-media-fullscreen" type="button"><i class="fa-solid fa-expand"></i> Full</button>
+                                </div>
+                                <input class="ui-media-progress js-media-progress" type="range" min="0" max="100" step="0.1" value="0" aria-label="Progreso de video" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-section">
+                        <h3>Separator</h3>
+                        <div class="ui-separator-demo">
+                            <p>Bloque superior</p>
+                            <div class="ui-separator"></div>
+                            <p>Bloque inferior</p>
+                        </div>
+                        <br>
+                        <h3>List Groups</h3>
+                        <ul class="ui-list-group">
+                            <li><strong>Inbox</strong><span>12</span></li>
+                            <li><strong>Drafts</strong><span>5</span></li>
+                            <li><strong>Archive</strong><span>34</span></li>
+                            <li><strong>Trash</strong><span>2</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div id="bloque-data-display" class="ui-block">
+            <h2>Data display</h2>
+            <div class="ui-block-content">
+                <div class="ui-display-showcase">
+                    <div class="ui-display-row">
+                        <div class="ui-display-section">
+                            <h3>Table</h3>
+                            <div class="ui-table-container">
+                                <table class="ui-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Role</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>john@example.com</td>
+                                            <td>Admin</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jane Smith</td>
+                                            <td>jane@example.com</td>
+                                            <td>User</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="ui-display-section">
+                            <h3>Sortable Table</h3>
+                            <div class="ui-table-container">
+                                <table class="ui-table ui-table-sortable js-sortable-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="js-sortable-col" data-index="0">Product <i class="fa-solid fa-sort"></i></th>
+                                            <th class="js-sortable-col" data-index="1">Price <i class="fa-solid fa-sort"></i></th>
+                                            <th class="js-sortable-col" data-index="2">Stock <i class="fa-solid fa-sort"></i></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Laptop</td>
+                                            <td>999</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Monitor</td>
+                                            <td>299</td>
+                                            <td>32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keyboard</td>
+                                            <td>79</td>
+                                            <td>50</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-row">
+                        <div class="ui-display-section">
+                            <h3>Status Badges</h3>
+                            <div class="ui-table-container">
+                                <table class="ui-table js-status-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Order #1</td>
+                                            <td><span class="ui-status-badge ui-status-active js-status-badge" data-status="active">Active</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Order #2</td>
+                                            <td><span class="ui-status-badge ui-status-pending js-status-badge" data-status="pending">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Order #3</td>
+                                            <td><span class="ui-status-badge ui-status-completed js-status-badge" data-status="completed">Completed</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="ui-display-section">
+                            <h3>Scroll Area</h3>
+                            <div class="ui-scroll-area">
+                                <p>Item 1 - Lorem ipsum dolor sit amet</p>
+                                <p>Item 2 - Consectetur adipiscing elit</p>
+                                <p>Item 3 - Sed do eiusmod tempor incididunt</p>
+                                <p>Item 4 - Ut labore et dolore magna aliqua</p>
+                                <p>Item 5 - Ut enim ad minim veniam</p>
+                                <p>Item 6 - Quis nostrud exercitation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-row">
+                        <div class="ui-display-section">
+                            <h3>Timeline</h3>
+                            <div class="ui-timeline">
+                                <div class="ui-timeline-item">
+                                    <div class="ui-timeline-dot"></div>
+                                    <div class="ui-timeline-content">
+                                        <strong>Project Started</strong>
+                                        <small>2024-01-15</small>
+                                    </div>
+                                </div>
+                                <div class="ui-timeline-item">
+                                    <div class="ui-timeline-dot"></div>
+                                    <div class="ui-timeline-content">
+                                        <strong>Design Approved</strong>
+                                        <small>2024-02-10</small>
+                                    </div>
+                                </div>
+                                <div class="ui-timeline-item">
+                                    <div class="ui-timeline-dot"></div>
+                                    <div class="ui-timeline-content">
+                                        <strong>Development Complete</strong>
+                                        <small>2024-03-20</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui-display-section">
+                            <h3>Activity Log</h3>
+                            <div class="ui-activity-log">
+                                <div class="ui-activity-item">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <div>
+                                        <strong>User registered</strong>
+                                        <small>2 hours ago</small>
+                                    </div>
+                                </div>
+                                <div class="ui-activity-item">
+                                    <i class="fa-solid fa-edit"></i>
+                                    <div>
+                                        <strong>Profile updated</strong>
+                                        <small>5 hours ago</small>
+                                    </div>
+                                </div>
+                                <div class="ui-activity-item">
+                                    <i class="fa-solid fa-download"></i>
+                                    <div>
+                                        <strong>File downloaded</strong>
+                                        <small>1 day ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-row">
+                        <div class="ui-display-section">
+                            <h3>Chart</h3>
+                            <div class="ui-chart">
+                                <div class="ui-chart-group">
+                                    <div class="ui-chart-bar" style="height: 35%;">
+                                        <span class="ui-chart-value"></span>
+                                    </div>
+                                    <label>Ene</label>
+                                </div>
+                                <div class="ui-chart-group">
+                                    <div class="ui-chart-bar" style="height: 62%;">
+                                        <span class="ui-chart-value"></span>
+                                    </div>
+                                    <label>Feb</label>
+                                </div>
+                                <div class="ui-chart-group">
+                                    <div class="ui-chart-bar" style="height: 45%;">
+                                        <span class="ui-chart-value"></span>
+                                    </div>
+                                    <label>Mar</label>
+                                </div>
+                                <div class="ui-chart-group">
+                                    <div class="ui-chart-bar" style="height: 85%;">
+                                        <span class="ui-chart-value"></span>
+                                    </div>
+                                    <label>Abr</label>
+                                </div>
+                                <div class="ui-chart-group">
+                                    <div class="ui-chart-bar" style="height: 70%;">
+                                        <span class="ui-chart-value"></span>
+                                    </div>
+                                    <label>May</label>
+                                </div>
+                                <div class="ui-chart-group">
+                                    <div class="ui-chart-bar" style="height: 55%;">
+                                        <span class="ui-chart-value"></span>
+                                    </div>
+                                    <label>Jun</label>
+                                </div>
+                            </div>
+                            <div class="ui-chart-legend">
+                                <button class="ui-chart-legend-btn" data-month="Ene" data-percent="35">Ene</button>
+                                <button class="ui-chart-legend-btn" data-month="Feb" data-percent="62">Feb</button>
+                                <button class="ui-chart-legend-btn" data-month="Mar" data-percent="45">Mar</button>
+                                <button class="ui-chart-legend-btn" data-month="Abr" data-percent="85">Abr</button>
+                                <button class="ui-chart-legend-btn" data-month="May" data-percent="70">May</button>
+                                <button class="ui-chart-legend-btn" data-month="Jun" data-percent="55">Jun</button>
+                            </div>
+                        </div>
+
+                        <div class="ui-display-section">
+                            <h3>Mini Chart Cards</h3>
+                            <div class="ui-mini-charts">
+                                <div class="ui-mini-chart-card">
+                                    <div class="ui-mini-chart-value">2.5K</div>
+                                    <small>Revenue</small>
+                                </div>
+                                <div class="ui-mini-chart-card">
+                                    <div class="ui-mini-chart-value">156</div>
+                                    <small>Conversions</small>
+                                </div>
+                                <div class="ui-mini-chart-card">
+                                    <div class="ui-mini-chart-value">89%</div>
+                                    <small>Growth</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-row ui-display-row-single">
+                        <div class="ui-display-section">
+                            <h3>Progress Checklist</h3>
+                            <div class="ui-progress-checklist js-progress-checklist">
+                                <div class="ui-checklist-item ui-checklist-done">
+                                    <input type="checkbox" checked class="js-checklist-check" />
+                                    <span>Requirement gathering</span>
+                                </div>
+                                <div class="ui-checklist-item ui-checklist-done">
+                                    <input type="checkbox" checked class="js-checklist-check" />
+                                    <span>Design mockups</span>
+                                </div>
+                                <div class="ui-checklist-item ui-checklist-inprogress">
+                                    <input type="checkbox" class="js-checklist-check" />
+                                    <span>Frontend development</span>
+                                </div>
+                                <div class="ui-checklist-item">
+                                    <input type="checkbox" class="js-checklist-check" />
+                                    <span>Testing & QA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bloque-layout-systems" class="ui-block">
+            <h2>Layout Systems</h2>
+
+            <div class="ui-display-row">
+                <div class="ui-display-section">
+                    <h3>Sidebar</h3>
+                    <div class="ui-sidebar-demo">
+                        <aside class="ui-sidebar-demo-aside">
+                            <div class="ui-sidebar-demo-item">Sidebar Item 1</div>
+                            <div class="ui-sidebar-demo-item">Sidebar Item 2</div>
+                            <div class="ui-sidebar-demo-item">Sidebar Item 3</div>
+                        </aside>
+                        <main class="ui-sidebar-demo-main">Main content area</main>
+                    </div>
+                </div>
+
+                <div class="ui-display-section">
+                    <h3>Resizable Panels / Split View</h3>
+                    <div class="ui-resizable-panels js-resizable-panels">
+                        <div class="ui-resizable-panel js-resizable-left">Left pane</div>
+                        <div class="ui-resizable-divider js-resizable-divider" role="separator" aria-orientation="vertical" aria-label="Resize panels"></div>
+                        <div class="ui-resizable-panel js-resizable-right">Right pane</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-display-row ui-display-row-single">
+                <div class="ui-display-section">
+                    <h3>Grid Demo</h3>
+                    <div class="ui-grid-demo">
+                        <div class="ui-grid-item">1</div>
+                        <div class="ui-grid-item">2</div>
+                        <div class="ui-grid-item">3</div>
+                        <div class="ui-grid-item">4</div>
+                        <div class="ui-grid-item">5</div>
+                        <div class="ui-grid-item">6</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-display-row ui-layout-row-3">
+                <div class="ui-display-section">
+                    <h3>Stacked Cards</h3>
+                    <div class="ui-stacked-cards js-stacked-cards">
+                        <div class="ui-stacked-card js-stacked-card" draggable="true">Card 1</div>
+                        <div class="ui-stacked-card js-stacked-card" draggable="true">Card 2</div>
+                        <div class="ui-stacked-card js-stacked-card" draggable="true">Card 3</div>
+                    </div>
+                </div>
+
+                <div class="ui-display-section">
+                    <h3>Section Wrappers</h3>
+                    <section class="ui-section-wrapper">
+                        <div class="ui-section-inner">Section content 1</div>
+                    </section>
+                    <section class="ui-section-wrapper">
+                        <div class="ui-section-inner">Section content 2</div>
+                    </section>
+                </div>
+
+                <div class="ui-display-section">
+                    <h3>Container Widths</h3>
+                    <div class="ui-container-widths">
+                        <div class="ui-width-demo">Container 100%</div>
+                        <div class="ui-width-demo ui-width-lg">Container Large</div>
+                        <div class="ui-width-demo ui-width-md">Container Medium</div>
+                        <div class="ui-width-demo ui-width-sm">Container Small</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bloque-utilities" class="ui-block">
+            <h2>Utilities</h2>
+
+            <div class="ui-display-row">
+                <div class="ui-display-section">
+                    <h3>Calendar</h3>
+                    <div class="ui-utils-calendar">
+                        <div class="ui-utils-calendar-head">
+                            <button type="button" class="ui-inline-action ui-utils-calendar-nav js-utils-calendar-prev" aria-label="Mes anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                            <strong class="js-utils-calendar-title">Calendario 2026</strong>
+                            <button type="button" class="ui-inline-action ui-utils-calendar-nav js-utils-calendar-next" aria-label="Mes siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="ui-utils-calendar-grid ui-utils-calendar-grid-days">
+                            <span>Lun</span><span>Mar</span><span>Mie</span><span>Jue</span><span>Vie</span><span>Sab</span><span>Dom</span>
+                        </div>
+                        <div class="ui-utils-calendar-grid js-utils-calendar-days"></div>
+                    </div>
+                </div>
+
+                <div class="ui-display-section">
+                    <h3>Date Picker Visual</h3>
+                    <div class="ui-utils-date-picker">
+                        <label for="ui-utils-date">Selecciona una fecha</label>
+                        <input id="ui-utils-date" class="ui-field" type="date" />
+                        <small class="js-utils-date-output">Fecha elegida:</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-display-row">
+                <div class="ui-display-section">
+                    <h3>Carousel</h3>
+                    <div class="ui-utils-carousel js-utils-carousel">
+                        <button class="ui-inline-action ui-utils-carousel-arrow js-utils-carousel-prev" type="button" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="ui-utils-carousel-viewport">
+                            <div class="ui-utils-carousel-track js-utils-carousel-track" style="transform: translateX(0%);">
+                                <article class="ui-utils-slide">Slide 1</article>
+                                <article class="ui-utils-slide">Slide 2</article>
+                                <article class="ui-utils-slide">Slide 3</article>
+                            </div>
+                        </div>
+                        <button class="ui-inline-action ui-utils-carousel-arrow js-utils-carousel-next" type="button" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="ui-display-section">
+                    <h3>Command Search</h3>
+                    <div class="ui-utils-command-search">
+                        <input type="text" class="ui-field js-utils-command-input" placeholder="Buscar comando..." />
+                        <ul class="ui-utils-command-list js-utils-command-list">
+                            <li data-command="Open settings">Open settings</li>
+                            <li data-command="Create new file">Create new file</li>
+                            <li data-command="Toggle sidebar">Toggle sidebar</li>
+                            <li data-command="Deploy project">Deploy project</li>
+                        </ul>
+                        <small class="js-utils-command-feedback">Selecciona un comando para ejecutarlo.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-display-row">
+                <div class="ui-display-section">
+                    <h3>Copy Button</h3>
+                    <div class="ui-utils-copy-wrap">
+                        <code class="js-utils-copy-text">npm run build</code>
+                        <button class="ui-inline-action js-utils-copy-btn" type="button">Copy</button>
+                        <small class="js-utils-copy-feedback">Listo para copiar</small>
+                    </div>
+                </div>
+
+                <div class="ui-display-section">
+                    <h3>Theme Toggle</h3>
+                    <div class="ui-utils-theme-toggle">
+                        <button class="ui-inline-action js-utils-theme-toggle" type="button">Cambiar tema</button>
+                        <small class="js-utils-theme-label">Tema actual: oscuro</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-display-row">
+                <div class="ui-display-section">
+                    <h3>Back to Top</h3>
+                    <button class="ui-inline-action js-utils-back-top" type="button">Volver arriba</button>
+                </div>
+
+                <div class="ui-display-section">
+                    <h3>Count Badges</h3>
+                    <div class="ui-utils-count-badges">
+                        <button class="ui-inline-action js-utils-badge-down" type="button">-</button>
+                        <span class="ui-badge ui-badges-popular js-utils-badge-value">7</span>
+                        <button class="ui-inline-action js-utils-badge-up" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-display-row ui-display-row-single">
+                <div class="ui-display-section">
+                    <h3>Notification Dot</h3>
+                    <div class="ui-utils-notification-demo">
+                        <span class="ui-utils-notification-item js-utils-inbox">
+                            Inbox
+                            <span class="ui-utils-dot js-utils-dot"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bloque-advanced" class="ui-block">
+            <h2>Advanced / Experimental</h2>
+
+            <div class="ui-advanced-showcase">
+                <div class="ui-display-row">
+                    <div class="ui-display-section">
+                        <h3>Animated Chart</h3>
+                        <div class="ui-adv-chart js-adv-chart">
+                            <div class="ui-adv-chart-bars">
+                                <div class="ui-adv-bar js-adv-bar" data-base="38"><span>Lun</span></div>
+                                <div class="ui-adv-bar js-adv-bar" data-base="56"><span>Mar</span></div>
+                                <div class="ui-adv-bar js-adv-bar" data-base="42"><span>Mie</span></div>
+                                <div class="ui-adv-bar js-adv-bar" data-base="73"><span>Jue</span></div>
+                                <div class="ui-adv-bar js-adv-bar" data-base="61"><span>Vie</span></div>
+                                <div class="ui-adv-bar js-adv-bar" data-base="49"><span>Sab</span></div>
+                            </div>
+                            <button class="ui-inline-action js-adv-chart-animate" type="button">Animar datos</button>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-section">
+                        <h3>Interactive Carousel</h3>
+                        <div class="ui-adv-carousel">
+                            <button class="ui-inline-action js-adv-carousel-prev" type="button" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                            <div class="ui-adv-carousel-viewport">
+                                <div class="ui-adv-carousel-track js-adv-carousel-track">
+                                    <article class="ui-adv-carousel-card">UI Motion</article>
+                                    <article class="ui-adv-carousel-card">Data Story</article>
+                                    <article class="ui-adv-carousel-card">Micro UX</article>
+                                </div>
+                            </div>
+                            <button class="ui-inline-action js-adv-carousel-next" type="button" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="ui-adv-carousel-dots js-adv-carousel-dots"></div>
+                    </div>
+                </div>
+
+                <div class="ui-display-row">
+                    <div class="ui-display-section">
+                        <h3>Range Calendar</h3>
+                        <div class="ui-adv-range-calendar">
+                            <div class="ui-adv-range-head">
+                                <button class="ui-inline-action ui-adv-range-nav js-adv-range-prev" type="button" aria-label="Mes anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                                <strong class="js-adv-range-title">Abril 2026</strong>
+                                <button class="ui-inline-action ui-adv-range-nav js-adv-range-next" type="button" aria-label="Mes siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                                <small class="js-adv-range-label">Rango: 5 - 18</small>
+                            </div>
+                            <p class="ui-adv-range-help">Arrastra sobre los dias para seleccionar un rango.</p>
+                            <div class="ui-adv-range-weekdays">
+                                <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+                            </div>
+                            <div class="ui-adv-range-days js-adv-range-days"></div>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-section">
+                        <h3>Drag and Drop Area</h3>
+                        <div class="ui-adv-drag-lab">
+                            <div class="ui-adv-drag-items js-adv-drag-items">
+                                <div class="ui-adv-drag-chip" draggable="true">Header</div>
+                                <div class="ui-adv-drag-chip" draggable="true">Hero</div>
+                                <div class="ui-adv-drag-chip" draggable="true">CTA</div>
+                            </div>
+                            <div class="ui-adv-dropzone js-adv-dropzone"><span class="js-adv-drop-hint">Suelta componentes aqui</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-display-row">
+                    <div class="ui-display-section">
+                        <h3>Reorder List</h3>
+                        <ul class="ui-adv-reorder-list js-adv-reorder-list">
+                            <li class="ui-adv-reorder-item" draggable="true">Research</li>
+                            <li class="ui-adv-reorder-item" draggable="true">Wireframes</li>
+                            <li class="ui-adv-reorder-item" draggable="true">Prototype</li>
+                            <li class="ui-adv-reorder-item" draggable="true">Handoff</li>
+                        </ul>
+                    </div>
+
+                    <div class="ui-display-section">
+                        <h3>Kanban Mini Board</h3>
+                        <div class="ui-adv-kanban js-adv-kanban">
+                            <div class="ui-adv-kanban-col">
+                                <h4>Todo</h4>
+                                <div class="ui-adv-kanban-card" draggable="true">Audit UI</div>
+                                <div class="ui-adv-kanban-card" draggable="true">Plan sprint</div>
+                            </div>
+                            <div class="ui-adv-kanban-col">
+                                <h4>Doing</h4>
+                                <div class="ui-adv-kanban-card" draggable="true">Build components</div>
+                            </div>
+                            <div class="ui-adv-kanban-col">
+                                <h4>Done</h4>
+                                <div class="ui-adv-kanban-card" draggable="true">Design review</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-display-row">
+                    <div class="ui-display-section">
+                        <h3>File Upload Zone</h3>
+                        <div class="ui-adv-upload js-adv-upload">
+                            <input class="js-adv-upload-input" type="file" multiple hidden />
+                            <button class="ui-inline-action js-adv-upload-trigger" type="button">Seleccionar archivos</button>
+                            <p>o arrastra archivos aqui</p>
+                            <ul class="ui-adv-upload-list js-adv-upload-list"></ul>
+                        </div>
+                    </div>
+
+                    <div class="ui-display-section">
+                        <h3>Hover Effects Gallery</h3>
+                        <div class="ui-adv-hover-gallery">
+                            <article class="ui-adv-hover-card"><span>Glow Lift</span></article>
+                            <article class="ui-adv-hover-card"><span>Skew Reveal</span></article>
+                            <article class="ui-adv-hover-card"><span>Neon Frame</span></article>
+                            <article class="ui-adv-hover-card"><span>Depth Tilt</span></article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-display-row ui-display-row-single">
+                    <div class="ui-display-section">
+                        <h3>Microinteractions Demo</h3>
+                        <div class="ui-adv-micro">
+                            <button class="ui-adv-micro-like js-adv-like" type="button"><i class="fa-solid fa-heart"></i> Like <span class="js-adv-like-count">24</span></button>
+                            <button class="ui-adv-micro-pulse js-adv-pulse" type="button">Pulse CTA</button>
+                            <label class="ui-adv-micro-switch">
+                                <input class="js-adv-switch" type="checkbox" />
+                                <span></span>
+                                <small class="js-adv-switch-label">Modo focus: off</small>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ui-overlay-modal" class="ui-overlay-backdrop js-modal-backdrop" hidden>
+            <div class="ui-overlay-modal" role="dialog" aria-modal="true" aria-label="Modal de ejemplo">
+                <h4>Dialog / Modal</h4>
+                <p>Modal centrado para confirmar acciones o mostrar informacion clave.</p>
+                <button class="ui-inline-action js-close-modal" type="button">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="ui-left-sheet" class="ui-left-sheet js-left-sheet" hidden>
+            <h4>Sheet lateral</h4>
+            <p>Panel lateral simplificado para reemplazar el componente Sheet.</p>
+            <button class="ui-inline-action js-close-sheet" type="button">Cerrar</button>
+        </div>
+        <button class="ui-overlay-backdrop js-sheet-backdrop" type="button" hidden aria-label="Cerrar sheet"></button>
+
+        <div id="ui-fullscreen-overlay" class="ui-fullscreen-overlay js-fullscreen-overlay" hidden>
+            <div class="ui-fullscreen-content">
+                <h4>Fullscreen Overlay</h4>
+                <p>Overlay de pantalla completa para foco total en una tarea.</p>
+                <button class="ui-inline-action js-close-fullscreen-overlay" type="button">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="ui-command-palette" class="ui-command-backdrop js-command-backdrop" hidden>
+            <div class="ui-command-palette" role="dialog" aria-modal="true" aria-label="Command palette">
+                <div class="ui-command-head">
+                    <input class="ui-field js-command-input" type="text" placeholder="Escribe un comando..." />
+                    <button class="ui-inline-action js-close-command-palette" type="button">Cerrar</button>
+                </div>
+                <div class="ui-command-list js-command-list">
+                    <button class="js-command-item" type="button" data-command="Go to Quick actions">Go to Quick actions</button>
+                    <button class="js-command-item" type="button" data-command="Go to Navigation">Go to Navigation</button>
+                    <button class="js-command-item" type="button" data-command="Open Drawer">Open Drawer</button>
+                    <button class="js-command-item" type="button" data-command="Toggle Fullscreen Overlay">Toggle Fullscreen Overlay</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ui-mobile-menu" class="ui-mobile-menu js-mobile-menu" hidden>
+            <button class="ui-mobile-close js-mobile-close" type="button" aria-label="Cerrar menu">&times;</button>
+            <a href="#bloque-acciones-rapidas">Quick actions</a>
+            <a href="#bloque-inputs-forms">Inputs and Forms</a>
+            <a href="#bloque-feedback-states">Feedback and States</a>
+            <a href="#bloque-navegacion">Navigation</a>
+            <a href="#bloque-content">Show and hide content</a>
+            <a href="#bloque-overlays">Overlays</a>
+            <a href="#bloque-content-display">Content display</a>
+            <a href="#bloque-data-display">Data display</a>
+            <a href="#bloque-layout-systems">Layout Systems</a>
+            <a href="#bloque-utilities">Utilities</a>
+            <a href="#bloque-advanced">Advanced Components</a>
+        </div>
+        <button class="ui-mobile-overlay js-mobile-overlay" type="button" hidden aria-label="Cerrar menu"></button>
+
+        <div id="ui-bottom-drawer" class="ui-bottom-drawer js-bottom-drawer" hidden>
+            <h4>Drawer inferior</h4>
+            <p>Drawer simplificado acoplado a la parte inferior.</p>
+            <button class="ui-inline-action ui-bottom-drawer-close js-bottom-drawer-close" type="button" aria-label="Cerrar drawer">Cerrar</button>
+        </div>
+        <button class="ui-mobile-overlay ui-mobile-overlay-bottom js-bottom-drawer-overlay" type="button" hidden aria-label="Cerrar drawer"></button>
+        <footer class="ui-footer">
+            <h5>Hecho con <span class="ui-footer-heart">&hearts;</span> por Shakiara Feliciano</h5>
+            <a class="ui-btn ui-btn-primary ui-footer-link" href="index.html">ver mas sobre mi</a>
+        </footer>
+    </section>
+
+    <script src="../scripts/ui-showcase.js"></script>
+</body>
+</html>
