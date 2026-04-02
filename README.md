@@ -1,4 +1,4 @@
-# Main_Portafolio
+# Portafolio
 
 Personal portfolio site built with plain HTML, CSS, and JavaScript. The repository includes a main portfolio page and a separate UI showcase page with interactive component demos.
 
