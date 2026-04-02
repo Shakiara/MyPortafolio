@@ -1,10 +1,10 @@
 # Main_Portafolio
 
-Personal portfolio site built with plain HTML, CSS, and JavaScript. The repository contains a main portfolio page and a separate UI showcase page with interactive component demos.
+Personal portfolio site built with plain HTML, CSS, and JavaScript. The repository includes a main portfolio page and a separate UI showcase page with interactive component demos.
 
 ## Overview
 
-This project presents a frontend portfolio for Shakiara Feliciano. It is designed as a static site, so there is no build step or framework dependency. The main page highlights an introduction, about section, skills, projects, and contact area. The showcase page is a playground for UI patterns such as buttons, forms, navigation, overlays, feedback states, and utility widgets.
+This project presents a frontend portfolio for Shakiara Feliciano. It is a static site, so there is no build step or framework dependency. The main page highlights an introduction, about section, skills, projects, and contact area. The showcase page is a playground for UI patterns such as buttons, forms, navigation, overlays, feedback states, and utility widgets.
 
 ## Features
 
@@ -44,6 +44,17 @@ Examples:
 - Live Server in VS Code
 - Python simple server: `python -m http.server`
 
+## Deployment
+
+If you have a live deployment, add the URL here:
+
+- Live site: add your deployment URL here
+
+You can also link specific pages if you deploy them separately:
+
+- Portfolio: add your URL here
+- UI Showcase: add your URL here
+
 ## About The Repo
 
 This repository is focused on frontend practice and personal branding. It shows how the site is structured, how interactive sections are built with vanilla JavaScript, and how reusable UI components can be explored in a separate showcase page.
@@ -53,3 +64,7 @@ This repository is focused on frontend practice and personal branding. It shows 
 - The project does not currently use a framework or package manager.
 - External icons are loaded from Font Awesome via CDN.
 - Several demo project links still point to placeholder URLs and can be replaced with real deployments or GitHub repositories later.
+
+## Spanish Version
+
+See the Spanish README here: [README.es.md](README.es.md)
