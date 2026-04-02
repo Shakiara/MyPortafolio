@@ -65,6 +65,3 @@ This repository is focused on frontend practice and personal branding. It shows 
 - External icons are loaded from Font Awesome via CDN.
 - Several demo project links still point to placeholder URLs and can be replaced with real deployments or GitHub repositories later.
 
-## Spanish Version
-
-See the Spanish README here: [README.es.md](README.es.md)
