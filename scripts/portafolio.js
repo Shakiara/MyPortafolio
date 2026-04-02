@@ -16,7 +16,7 @@ const PROJECTS = [
 		iconClass: "fa-solid fa-list-check",
 		iconColorClass: "project-icon-blue",
 		demoUrl: "https://example.com",
-		codeUrl: "https://github.com",
+		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
 	},
 	{
 		title: "Calculadora",
@@ -25,7 +25,7 @@ const PROJECTS = [
 		iconClass: "fa-solid fa-calculator",
 		iconColorClass: "project-icon-purple",
 		demoUrl: "https://example.com",
-		codeUrl: "https://github.com",
+		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
 	},
 	{
 		title: "Generador de frases",
@@ -34,7 +34,7 @@ const PROJECTS = [
 		iconClass: "fa-solid fa-quote-right",
 		iconColorClass: "project-icon-pink",
 		demoUrl: "https://example.com",
-		codeUrl: "https://github.com",
+		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
 	},
 	{
 		title: "Formulario con validaci\u00f3n",
@@ -43,7 +43,7 @@ const PROJECTS = [
 		iconClass: "fa-solid fa-square-check",
 		iconColorClass: "project-icon-blue",
 		demoUrl: "https://example.com",
-		codeUrl: "https://github.com",
+		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
 	},
 	{
 		title: "UI Interactiva",
@@ -52,7 +52,7 @@ const PROJECTS = [
 		iconClass: "fa-solid fa-object-group",
 		iconColorClass: "project-icon-purple",
 		demoUrl: "./ui-showcase.html",
-		codeUrl: "https://github.com",
+		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
 	},
 	{
 		title: "JSON Data Viewer",
@@ -62,7 +62,7 @@ const PROJECTS = [
 		iconClass: "fa-solid fa-file-code",
 		iconColorClass: "project-icon-blue",
 		demoUrl: "https://example.com",
-		codeUrl: "https://github.com",
+		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
 	},
 ];
 
