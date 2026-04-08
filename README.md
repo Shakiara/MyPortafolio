@@ -1,67 +1,174 @@
-# Portafolio
+# MyPortafolio
 
-Personal portfolio site built with plain HTML, CSS, and JavaScript. The repository includes a main portfolio page and a separate UI showcase page with interactive component demos.
+MyPortafolio is a personal portfolio site for Shakiara Feliciano built with plain HTML, CSS, and JavaScript, now served through a lightweight Node server so the project can run with `npm`.
 
-## Overview
+The repository includes:
 
-This project presents a frontend portfolio for Shakiara Feliciano. It is a static site, so there is no build step or framework dependency. The main page highlights an introduction, about section, skills, projects, and contact area. The showcase page is a playground for UI patterns such as buttons, forms, navigation, overlays, feedback states, and utility widgets.
+- a main portfolio page
+- a UI showcase page with interactive interface experiments
+- a small Node server for local development and easy GitHub sharing
 
-## Features
+## What This Project Is For
 
-- Responsive portfolio layout with desktop and mobile navigation
-- Animated hero section and reveal effects on scroll
-- Skills section with progress indicators
-- Dynamic projects grid rendered from JavaScript data
-- Contact section with form markup and contact details
-- Dedicated UI showcase page with reusable component examples
+This project is meant to showcase:
+
+- personal branding and frontend presentation
+- responsive layout and navigation
+- reusable UI patterns
+- interactive JavaScript with no framework
+- a portfolio structure that is simple to run and maintain
+
+## Main Pages
+
+- `/`
+  Main portfolio page
+- `/ui-showcase`
+  UI experiments and component showcase
+
+## Tech Stack
+
+- HTML
+- CSS
+- Vanilla JavaScript
+- Node.js
 
 ## Project Structure
 
-- `pages/index.html` - main portfolio page
-- `pages/ui-showcase.html` - UI component showcase page
-- `scripts/portafolio.js` - portfolio behavior and project rendering
-- `scripts/ui-showcase.js` - interactions for the UI showcase page
-- `styles/style.css` - main portfolio styles
-- `styles/ui.css` - shared UI showcase styles
-- `media/` - assets and media files
-- `docs/` - reserved for documentation
-- `packages/` - reserved for future packages or modules
+```text
+MyPortafolio/
+├── media/
+│   Static media assets used by the project.
+├── pages/
+│   ├── index.html
+│   │   Main portfolio page.
+│   └── ui-showcase.html
+│       Secondary page with UI component demos and interaction experiments.
+├── scripts/
+│   ├── portafolio.js
+│   │   Main frontend behavior for the portfolio:
+│   │   project rendering, menu toggle, reveal animations, smooth scroll, and contact form behavior.
+│   └── ui-showcase.js
+│       Interaction logic for the UI showcase page.
+├── styles/
+│   ├── style.css
+│   │   Main portfolio styling, layout, sections, cards, hero, contact, and responsive rules.
+│   └── ui.css
+│       UI showcase component styles and shared button styles used by the portfolio.
+├── package.json
+│   npm metadata and scripts.
+├── package-lock.json
+│   Lockfile for npm.
+├── server.js
+│   Lightweight Node HTTP server that serves the pages and static assets.
+└── README.md
+    Project documentation and setup instructions.
+```
 
-## How To Run
+## What Was Improved
 
-Because this is a static site, you can open the HTML files directly in a browser. For the best result, use a local server so relative paths load correctly.
+This repository was updated to fix structural and functional issues:
 
-### Option 1: Open Directly
+- added `package.json` so `npm` works
+- added `server.js` so the project can run locally with Node
+- fixed the broken stylesheet path in `ui-showcase.html`
+- refactored the main portfolio page structure
+- improved the visual design of the home page
+- cleaned up project data and links
+- updated the README to reflect the real repo
 
-Open `pages/index.html` in your browser.
+## How To Run Locally
 
-### Option 2: Use A Local Server
+### Option 1: Run with npm
 
-If you have VS Code Live Server or any simple static server, open the `pages/` folder and serve the site from there.
+From the project root:
 
-Examples:
+```bash
+cd "/Users/kyarah/Documents/MyPortafolio"
+npm start
+```
 
-- Live Server in VS Code
-- Python simple server: `python -m http.server`
+Then open:
 
-## Deployment
+[http://127.0.0.1:3000](http://127.0.0.1:3000)
 
-If you have a live deployment, add the URL here:
+### Development mode
 
-- Live site: add your deployment URL here
+If your Node version supports watch mode:
 
-You can also link specific pages if you deploy them separately:
+```bash
+npm run dev
+```
 
-- Portfolio: add your URL here
-- UI Showcase: add your URL here
+## Available npm Scripts
 
-## About The Repo
+```bash
+npm start
+```
 
-This repository is focused on frontend practice and personal branding. It shows how the site is structured, how interactive sections are built with vanilla JavaScript, and how reusable UI components can be explored in a separate showcase page.
+Starts the local Node server.
 
-## Notes
+```bash
+npm run dev
+```
 
-- The project does not currently use a framework or package manager.
-- External icons are loaded from Font Awesome via CDN.
-- Several demo project links still point to placeholder URLs and can be replaced with real deployments or GitHub repositories later.
+Starts the server in watch mode using Node.
 
+## Routes
+
+The local server supports:
+
+- `/`
+- `/ui-showcase`
+- `/ui-showcase.html`
+- `/api/health`
+
+You can test health quickly with:
+
+```bash
+curl http://127.0.0.1:3000/api/health
+```
+
+## Design Notes
+
+The current design direction is:
+
+- dark editorial-style landing page
+- stronger hero composition
+- cleaner project cards
+- clearer contact section
+- more honest project framing without fake demo promises
+
+## Known Scope
+
+This is still a frontend portfolio, not a database-backed application.
+
+There is no full backend for:
+
+- storing contact form submissions
+- user accounts
+- admin dashboards
+- databases
+
+The Node server exists so the project can run cleanly through `npm`, serve routes reliably, and be easier to share.
+
+## If You Upload It To GitHub
+
+Anyone who clones the repo can run it with:
+
+```bash
+git clone https://github.com/Shakiara/MyPortafolio.git
+cd MyPortafolio
+npm start
+```
+
+Then open:
+
+[http://127.0.0.1:3000](http://127.0.0.1:3000)
+
+## Suggested Next Improvements
+
+- add real deployment link in the README
+- add a downloadable resume
+- replace any remaining placeholder project destinations with live demos
+- add screenshots for the portfolio and UI showcase
+- optionally migrate to a small component-based frontend stack later

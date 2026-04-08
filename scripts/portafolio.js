@@ -1,198 +1,264 @@
 const PROJECTS = [
-	{
-		title: "Landing Page",
-		description:
-			"P\u00e1gina web responsiva con dise\u00f1o moderno enfocada en la presentaci\u00f3n de productos y experiencia del usuario.",
-		tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-		iconClass: "fa-solid fa-laptop-code",
-		iconColorClass: "project-icon-pink",
-		demoUrl: "https://example.com",
-		codeUrl: "https://github.com",
-	},
-	{
-		title: "To-Do List App",
-		description: "Aplicaci\u00f3n simple de gesti\u00f3n de tareas con funcionalidades b\u00e1sicas.",
-		tags: ["HTML", "CSS", "JavaScript"],
-		iconClass: "fa-solid fa-list-check",
-		iconColorClass: "project-icon-blue",
-		demoUrl: "https://example.com",
-		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
-	},
-	{
-		title: "Calculadora",
-		description: "Calculadora interactiva para practicar l\u00f3gica y eventos.",
-		tags: ["HTML", "CSS", "JavaScript"],
-		iconClass: "fa-solid fa-calculator",
-		iconColorClass: "project-icon-purple",
-		demoUrl: "https://example.com",
-		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
-	},
-	{
-		title: "Generador de frases",
-		description: "Aplicaci\u00f3n que muestra frases aleatorias.",
-		tags: ["HTML", "CSS", "JavaScript"],
-		iconClass: "fa-solid fa-quote-right",
-		iconColorClass: "project-icon-pink",
-		demoUrl: "https://example.com",
-		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
-	},
-	{
-		title: "Formulario con validaci\u00f3n",
-		description: "Formulario interactivo con validaciones en tiempo real.",
-		tags: ["HTML", "CSS", "JavaScript"],
-		iconClass: "fa-solid fa-square-check",
-		iconColorClass: "project-icon-blue",
-		demoUrl: "https://example.com",
-		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
-	},
-	{
-		title: "UI Interactiva",
-		description: "Interfaz de usuario interactiva con animaciones y efectos.",
-		tags: ["HTML", "CSS", "JavaScript"],
-		iconClass: "fa-solid fa-object-group",
-		iconColorClass: "project-icon-purple",
-		demoUrl: "./ui-showcase.html",
-		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
-	},
-	{
-		title: "JSON Data Viewer",
-		description:
-			"Visualizador de datos en JSON para mostrar listas de productos y usuarios de forma clara.",
-		tags: ["HTML", "CSS", "JavaScript", "JSON"],
-		iconClass: "fa-solid fa-file-code",
-		iconColorClass: "project-icon-blue",
-		demoUrl: "https://example.com",
-		codeUrl: "https://github.com/Shakiara/MyPortafolio.git",
-	},
+  {
+    title: "Dev Companion",
+    description:
+      "Aplicacion web para organizar proyectos, ideas, errores y notas, con autenticacion, dashboard y panel de administrador.",
+    tags: ["HTML", "CSS", "JavaScript", "Node.js"],
+    iconClass: "fa-solid fa-rocket",
+    tone: "Full stack",
+    demoUrl: null,
+    codeUrl: "https://github.com/Shakiara/Dev_Companion"
+  },
+  {
+    title: "MyPortafolio",
+    description:
+      "Portafolio personal responsivo con una identidad visual mas fuerte, estructura clara y una capa de interaccion ligera.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    iconClass: "fa-solid fa-id-card",
+    tone: "Portfolio",
+    demoUrl: "/",
+    codeUrl: "https://github.com/Shakiara/MyPortafolio"
+  },
+  {
+    title: "UI Showcase",
+    description:
+      "Coleccion de componentes y patrones de interfaz para practicar estados, overlays, navegacion y experimentos de UI.",
+    tags: ["UI", "CSS", "JavaScript"],
+    iconClass: "fa-solid fa-shapes",
+    tone: "Design system",
+    demoUrl: "/ui-showcase",
+    codeUrl: "https://github.com/Shakiara/MyPortafolio"
+  },
+  {
+    title: "To-Do List App",
+    description:
+      "Ejercicio para practicar eventos, render dinamico, estados vacios y persistencia basica del lado cliente.",
+    tags: ["JavaScript", "DOM", "UX"],
+    iconClass: "fa-solid fa-list-check",
+    tone: "Practice app",
+    demoUrl: null,
+    codeUrl: "https://github.com/Shakiara/MyPortafolio"
+  },
+  {
+    title: "Calculator",
+    description:
+      "Proyecto de logica interactiva enfocado en operaciones, botones de control y feedback instantaneo al usuario.",
+    tags: ["Logic", "JavaScript", "UI"],
+    iconClass: "fa-solid fa-calculator",
+    tone: "Logic",
+    demoUrl: null,
+    codeUrl: "https://github.com/Shakiara/MyPortafolio"
+  },
+  {
+    title: "Form Validation",
+    description:
+      "Ejercicio orientado a validacion en cliente, mensajes de error claros y mejores flujos de formulario.",
+    tags: ["Forms", "Validation", "Frontend"],
+    iconClass: "fa-solid fa-square-check",
+    tone: "Forms",
+    demoUrl: null,
+    codeUrl: "https://github.com/Shakiara/MyPortafolio"
+  }
 ];
 
 function renderProjects() {
-	const grid = document.getElementById("projects-grid");
-	if (!grid) return;
+  const grid = document.getElementById("projects-grid");
 
-	grid.innerHTML = PROJECTS.map(
-		(project) => `
-			<article class="project-card reveal" data-delay="120">
-				<div class="project-visual">
-					<i class="project-icon ${project.iconColorClass} ${project.iconClass}" aria-hidden="true"></i>
-				</div>
-				<div class="project-body">
-					<h3>${project.title}</h3>
-					<p>${project.description}</p>
-					<div class="tags">
-						${project.tags.map((tag) => `<span>${tag}</span>`).join("")}
-					</div>
-					<div class="project-links">
-						<a class="ui-btn ui-btn-secondary" href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" aria-label="Ver demo">Demo</a>
-						<a class="ui-btn ui-btn-warning" href="${project.codeUrl}" target="_blank" rel="noopener noreferrer" aria-label="Ver c\u00f3digo">C\u00f3digo</a>
-					</div>
-				</div>
-			</article>
-		`,
-	).join("");
+  if (!grid) {
+    return;
+  }
+
+  grid.innerHTML = PROJECTS.map((project, index) => {
+    const demoLink = project.demoUrl
+      ? `<a class="ui-btn ui-btn-secondary" href="${project.demoUrl}" ${project.demoUrl.startsWith("http") ? 'target="_blank" rel="noopener noreferrer"' : ""}>Ver demo</a>`
+      : '<span>Demo pronto</span>';
+
+    const codeLink = project.codeUrl
+      ? `<a class="ui-btn ui-btn-warning" href="${project.codeUrl}" target="_blank" rel="noopener noreferrer">Ver codigo</a>`
+      : '<span>Repositorio pronto</span>';
+
+    return `
+      <article class="project-card reveal" data-delay="${index * 70}">
+        <div class="project-visual">
+          <div class="project-accent">
+            <span class="project-tone">${project.tone}</span>
+            <i class="${project.iconClass}" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>${project.title}</h3>
+          <p>${project.description}</p>
+          <div class="tags">
+            ${project.tags.map((tag) => `<span>${tag}</span>`).join("")}
+          </div>
+          <div class="project-links">
+            ${demoLink}
+            ${codeLink}
+          </div>
+        </div>
+      </article>
+    `;
+  }).join("");
 }
 
 function setupMenu() {
-	const toggle = document.getElementById("menu-toggle");
-	const mobileMenu = document.getElementById("mobile-menu");
-	if (!toggle || !mobileMenu) return;
+  const toggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-	toggle.addEventListener("click", () => {
-		const expanded = toggle.getAttribute("aria-expanded") === "true";
-		toggle.setAttribute("aria-expanded", String(!expanded));
-		mobileMenu.hidden = expanded;
-	});
+  if (!toggle || !mobileMenu) {
+    return;
+  }
+
+  toggle.addEventListener("click", () => {
+    const expanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!expanded));
+    mobileMenu.hidden = expanded;
+  });
 }
 
 function setupSmoothScroll() {
-	const controls = document.querySelectorAll("[data-scroll-target]");
-	controls.forEach((control) => {
-		control.addEventListener("click", () => {
-			const selector = control.getAttribute("data-scroll-target");
-			if (!selector) return;
+  const controls = document.querySelectorAll("[data-scroll-target]");
 
-			const section = document.querySelector(selector);
-			if (!section) return;
+  controls.forEach((control) => {
+    control.addEventListener("click", (event) => {
+      const selector = control.getAttribute("data-scroll-target");
 
-			section.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (!selector) {
+        return;
+      }
 
-			const toggle = document.getElementById("menu-toggle");
-			const mobileMenu = document.getElementById("mobile-menu");
-			if (toggle && mobileMenu && !mobileMenu.hidden) {
-				toggle.setAttribute("aria-expanded", "false");
-				mobileMenu.hidden = true;
-			}
-		});
-	});
+      const section = document.querySelector(selector);
+
+      if (!section) {
+        return;
+      }
+
+      event.preventDefault();
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      const toggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (toggle && mobileMenu && !mobileMenu.hidden) {
+        toggle.setAttribute("aria-expanded", "false");
+        mobileMenu.hidden = true;
+      }
+    });
+  });
 }
 
 function setupReveal() {
-	const revealElements = document.querySelectorAll(".reveal");
-	const observer = new IntersectionObserver(
-		(entries) => {
-			entries.forEach((entry) => {
-				if (!entry.isIntersecting) return;
+  const items = document.querySelectorAll(".reveal");
 
-				const delay = Number(entry.target.getAttribute("data-delay") || "0");
-				window.setTimeout(() => {
-					entry.target.classList.add("is-visible");
-				}, delay);
-				observer.unobserve(entry.target);
-			});
-		},
-		{ threshold: 0.15 },
-	);
+  if (!("IntersectionObserver" in window)) {
+    items.forEach((item) => item.classList.add("is-visible"));
+    return;
+  }
 
-	revealElements.forEach((el) => observer.observe(el));
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        const delay = Number(entry.target.getAttribute("data-delay") || "0");
+        window.setTimeout(() => {
+          entry.target.classList.add("is-visible");
+        }, delay);
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  items.forEach((item) => observer.observe(item));
 }
 
 function setupSkills() {
-	const skillRows = document.querySelectorAll(".skill-row");
+  const bars = document.querySelectorAll(".skill-progress");
 
-	skillRows.forEach((row) => {
-		const nameSpan = row.querySelector("div span:first-child");
-		const progress = row.querySelector(".skill-progress");
-		const level = progress?.getAttribute("data-level") || "0";
+  if (!("IntersectionObserver" in window)) {
+    bars.forEach((bar) => {
+      const level = Number(bar.getAttribute("data-level") || "0");
+      window.requestAnimationFrame(() => {
+        bar.style.width = `${level}%`;
+        bar.classList.add("is-animated");
+      });
+    });
+    return;
+  }
 
-		const showDetails = () => {
-			row.classList.add("is-detail-visible");
-			if (progress) progress.style.width = `${level}%`;
-		};
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
 
-		const hideDetails = () => {
-			row.classList.remove("is-detail-visible");
-			if (progress) progress.style.width = "0";
-		};
+      const bar = entry.target;
+      const level = Number(bar.getAttribute("data-level") || "0");
 
-		if (nameSpan) {
-			nameSpan.classList.add("skill-name");
-			nameSpan.setAttribute("tabindex", "0");
-		}
+      window.requestAnimationFrame(() => {
+        bar.style.width = `${level}%`;
+        bar.classList.add("is-animated");
+      });
 
-		row.addEventListener("mouseenter", showDetails);
-		row.addEventListener("mouseleave", hideDetails);
-		row.addEventListener("focusin", showDetails);
-		row.addEventListener("focusout", (event) => {
-			if (row.contains(event.relatedTarget)) return;
-			hideDetails();
-		});
-	});
+      observer.unobserve(bar);
+    });
+  }, { threshold: 0.35 });
+
+  bars.forEach((bar) => {
+    observer.observe(bar);
+  });
+}
+
+function setupContactForm() {
+  const form = document.getElementById("contact-form");
+  const feedback = document.getElementById("contact-feedback");
+
+  if (!form || !feedback) {
+    return;
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    if (!name || !email || !message) {
+      feedback.textContent = "Completa todos los campos antes de enviar.";
+      return;
+    }
+
+    const subject = encodeURIComponent(`Mensaje de ${name} desde el portafolio`);
+    const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${message}`);
+    window.location.href = `mailto:shakiara.feliciano@gmail.com?subject=${subject}&body=${body}`;
+    feedback.textContent = "Se abrió tu app de correo para completar el envio.";
+    form.reset();
+  });
 }
 
 function setupFooterYear() {
-	const yearEl = document.getElementById("copyright-year");
-	if (yearEl) {
-		yearEl.textContent = `© ${new Date().getFullYear()} Todos los derechos reservados.`;
-	}
+  const yearEl = document.getElementById("copyright-year");
+
+  if (!yearEl) {
+    return;
+  }
+
+  yearEl.textContent = `© ${new Date().getFullYear()} Shakiara Feliciano.`;
 }
 
 function initPortfolio() {
-	renderProjects();
-	setupMenu();
-	setupSmoothScroll();
-	setupReveal();
-	setupSkills();
-	setupFooterYear();
+  renderProjects();
+  setupMenu();
+  setupSmoothScroll();
+  setupReveal();
+  setupSkills();
+  setupContactForm();
+  setupFooterYear();
 }
 
 document.addEventListener("DOMContentLoaded", initPortfolio);

@@ -1,281 +1,328 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mi Portafolio</title>
-        <meta
-            name="description"
-            content="Portafolio personal en HTML, CSS y JavaScript puro."
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        />
-        <link rel="stylesheet" href="../styles/style.css" />
-        <link rel="stylesheet" href="../styles/ui.css" />
-    </head>
-    <body>
-        <div class="site-shell">
-            <nav class="navbar" aria-label="Navegaci&oacute;n principal">
-                <div class="container nav-inner">
-                    <a class="brand" href="#home">Mi Portafolio</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shakiara Feliciano | Portafolio</title>
+    <meta
+      name="description"
+      content="Portafolio de Shakiara Feliciano con proyectos frontend, habilidades, UI experiments y formas de contacto."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/ui.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar" aria-label="Navegacion principal">
+        <div class="container nav-inner">
+          <a class="brand" href="#home">Shakiara.dev</a>
 
-                    <div class="nav-links desktop-only">
-                        <button type="button" class="nav-link" data-scroll-target="#home">Inicio</button>
-                        <button type="button" class="nav-link" data-scroll-target="#about">Sobre m&iacute;</button>
-                        <button type="button" class="nav-link" data-scroll-target="#skills">Habilidades</button>
-                        <button type="button" class="nav-link" data-scroll-target="#projects">Proyectos</button>
-                        <button type="button" class="nav-link" data-scroll-target="#contact">Contacto</button>
-                    </div>
+          <div class="nav-links desktop-only">
+            <button type="button" class="nav-link" data-scroll-target="#home">Inicio</button>
+            <button type="button" class="nav-link" data-scroll-target="#about">Sobre mi</button>
+            <button type="button" class="nav-link" data-scroll-target="#skills">Skills</button>
+            <button type="button" class="nav-link" data-scroll-target="#projects">Proyectos</button>
+            <button type="button" class="nav-link" data-scroll-target="#contact">Contacto</button>
+          </div>
 
-                    <button
-                        id="menu-toggle"
-                        type="button"
-                        class="menu-toggle mobile-only"
-                        aria-expanded="false"
-                        aria-controls="mobile-menu"
-                        aria-label="Abrir men&uacute;"
-                    >
-                        <i class="menu-icon fa-solid fa-bars" aria-hidden="true"></i>
-                    </button>
-                </div>
-
-                <div id="mobile-menu" class="mobile-menu" hidden>
-                    <div class="container mobile-menu-inner">
-                        <button type="button" class="mobile-link" data-scroll-target="#home">Inicio</button>
-                        <button type="button" class="mobile-link" data-scroll-target="#about">Sobre m&iacute;</button>
-                        <button type="button" class="mobile-link" data-scroll-target="#skills">Habilidades</button>
-                        <button type="button" class="mobile-link" data-scroll-target="#projects">Proyectos</button>
-                        <button type="button" class="mobile-link" data-scroll-target="#contact">Contacto</button>
-                    </div>
-                </div>
-            </nav>
-
-            <main>
-                <section id="home" class="hero section-pad">
-                    <div class="hero-bg" aria-hidden="true">
-                        <div class="blob"></div>
-                        <div class="blob blob-delay-2"></div>
-                        <div class="blob blob-delay-4"></div>
-                    </div>
-
-                    <div class="container hero-content reveal" data-delay="0">
-                        <h1>
-                            Hola, soy
-                            <span class="grad-text">Shakiara Feliciano</span>
-                        </h1>
-                        <p class="hero-role">Frontend Developer | Estudiante de Ciencias de Computadoras</p>
-                        <p class="hero-copy">
-                            Enfocada en crear interfaces web funcionales y atractivas mientras desarrollo mis habilidades en programación y diseño.
-                        </p>
-
-                        <div class="social-links">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
-                            <a href="mailto:tu@email.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
-                        </div>
-
-                        <div class="hero-cta">
-                            <button type="button" class="glow-btn ui-btn ui-btn-primary" data-scroll-target="#projects">
-                                <span class="glow-inner">Ver Proyectos</span>
-                            </button>
-                            <button type="button" class="glow-btn-secondary ui-btn ui-btn-secondary" data-scroll-target="#about">
-                                <span class="glow-inner">Conoce m&aacute;s</span>
-                            </button>
-                        </div>
-
-                        <button type="button" class="scroll-down" data-scroll-target="#about" aria-label="Ir a sobre m&iacute;">
-                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </section>
-
-                <section id="about" class="section-pad section-alt">
-                    <div class="container">
-                        <h2 class="section-title reveal">Sobre M&iacute;</h2>
-
-                        <div class="about-grid reveal" data-delay="80">
-                            <div>
-                                <p>
-                                    Soy una desarrolladora en formación apasionada por la tecnología y el desarrollo
-                                    web. Actualmente curso estudios en Ciencias de Computadoras, donde he adquirido
-                                    bases sólidas en programación, bases de datos y desarrollo de aplicaciones.
-                                </p>
-                                <p>
-                                    Me enfoco en crear interfaces web funcionales y bien estructuradas utilizando
-                                    HTML, CSS y JavaScript, siempre cuidando la organización del código y la
-                                    experiencia del usuario. Disfruto aprender nuevas herramientas y mejorar
-                                    constantemente mis habilidades técnicas mediante proyectos prácticos.
-                                </p>
-                                <p>
-                                    Además, me interesa entender cómo funcionan los sistemas más allá del
-                                    frontend, explorando conceptos como APIs, servidores y arquitectura de
-                                    software. Siempre estoy en proceso de aprendizaje, buscando crecer como
-                                    profesional y desarrollar soluciones cada vez más completas y eficientes.
-                                </p>
-                            </div>
-
-                            <div class="about-card">
-                                <div class="about-avatar"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
-                                <p>Desarrolladora Frontend</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-grid">
-                            <article class="feature-card reveal" data-delay="0">
-                                <div class="feature-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
-                                <h3>Desarrollo</h3>
-                                <p>Creaci&oacute;n de aplicaciones web funcionales utilizando HTML, CSS y JavaScript, enfoc&aacute;ndome en c&oacute;digo limpio y bien estructurado.</p>
-                            </article>
-                            <article class="feature-card reveal" data-delay="120">
-                                <div class="feature-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
-                                <h3>Dise&ntilde;o</h3>
-                                <p>Dise&ntilde;o de interfaces claras e intuitivas, priorizando la experiencia del usuario y la organizaci&oacute;n visual.</p>
-                            </article>
-                            <article class="feature-card reveal" data-delay="240">
-                                <div class="feature-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
-                                <h3>Innovaci&oacute;n</h3>
-                                <p>En constante aprendizaje de nuevas tecnolog&iacute;as y herramientas para mejorar mis habilidades como desarrolladora.</p>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="skills" class="section-pad">
-                    <div class="container">
-                        <h2 class="section-title reveal">Habilidades</h2>
-
-                        <div class="skills-grid">
-                            <article class="skills-card reveal" data-delay="0">
-                                <h3>Frontend</h3>
-                                <div class="skill-list">
-                                    <div class="skill-row">
-                                        <div><span>HTML</span><span>90%</span></div>
-                                        <div class="skill-track"><div class="skill-progress" data-level="90"></div></div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div><span>CSS</span><span>85%</span></div>
-                                        <div class="skill-track"><div class="skill-progress" data-level="85"></div></div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div><span>JavaScript</span><span>65%</span></div>
-                                        <div class="skill-track"><div class="skill-progress" data-level="65"></div></div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div><span>Bootstrap</span><span>40%</span></div>
-                                        <div class="skill-track"><div class="skill-progress" data-level="40"></div></div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="skills-card reveal" data-delay="120">
-                                <h3>Backend</h3>
-                                <div class="skill-list">
-                                    <div class="skill-row">
-                                        <div><span>En aprendizaje</span><span>45%</span></div>
-                                        <div class="skill-track"><div class="skill-progress" data-level="45"></div></div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="skills-card reveal" data-delay="240">
-                                <h3>Herramientas</h3>
-                                <div class="skill-list">
-                                    <div class="skill-row">
-                                        <div><span>VS Code</span><span>95%</span></div>
-                                        <div class="skill-track"><div class="skill-progress" data-level="95"></div></div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div><span>GitHub</span><span>90%</span></div>
-                                        <div class="skill-track"><div class="skill-progress" data-level="90"></div></div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div><span>Figma</span><span>85%</span></div>
-                                        <div class="skill-track"><div class="skill-progress" data-level="85"></div></div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div><span>Postman</span><span>15%</span></div>
-                                        <div class="skill-track"><div class="skill-progress" data-level="15"></div></div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="container" aria-hidden="true">
-                    <div class="section-divider ui-showcase-line"></div>
-                </div>
-
-                <section id="projects" class="section-pad">
-                    <div class="container">
-                        <h2 class="section-title reveal">Proyectos</h2>
-                        <div class="projects-grid" id="projects-grid"></div>
-                    </div>
-                </section>
-
-                <section id="contact" class="section-pad section-alt">
-                    <div class="container">
-                        <h2 class="section-title reveal">Contacto</h2>
-
-                        <div class="contact-grid">
-                            <div class="reveal" data-delay="0">
-                                <h3 class="contact-title">Hablemos</h3>
-                                <p class="contact-copy">
-                                    Estoy disponible para nuevos proyectos y colaboraciones. No dudes en
-                                    contactarme si tienes alguna pregunta o propuesta.
-                                </p>
-
-                                <div class="contact-items">
-                                    <div>
-                                        <p>Email</p>
-                                        <a href="mailto:shakiaraj.feliciano@intermetro.com">shakiara.feliciano@gmail.com</a>
-                                    </div>
-                                    <div>
-                                        <p>Tel&eacute;fono</p>
-                                        <a href="tel:+1234567890">+1 (234) 567-890</a>
-                                    </div>
-                                    <div>
-                                        <p>Ubicaci&oacute;n</p>
-                                        <span>Can&oacute;vanas, Puerto Rico</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <form id="contact-form" class="contact-form reveal" data-delay="120" accept-charset="UTF-8">
-                                <label for="name">Nombre</label>
-                                <input id="name" name="name" type="text" required placeholder="Tu nombre" />
-
-                                <label for="email">Email</label>
-                                <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-
-                                <label for="message">Mensaje</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="5"
-                                    required
-                                    placeholder="Cu&eacute;ntame sobre tu proyecto..."
-                                ></textarea>
-
-                                <button type="submit" class="glow-btn ui-btn ui-btn-primary full-width">
-                                    <span class="glow-inner">Enviar Mensaje</span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-            <footer class="footer">
-                <div class="container footer-inner">
-                    <p>Hecho con <span class="heart"><i class="fa-solid fa-heart" aria-hidden="true"></i></span> por Shakiara Feliciano</p>
-                    <p id="copyright-year"></p>
-                </div>
-            </footer>
+          <button
+            id="menu-toggle"
+            type="button"
+            class="menu-toggle mobile-only"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Abrir menu"
+          >
+            <i class="menu-icon fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
         </div>
 
-        <script src="../scripts/portafolio.js"></script>
-    </body>
+        <div id="mobile-menu" class="mobile-menu" hidden>
+          <div class="container mobile-menu-inner">
+            <button type="button" class="mobile-link" data-scroll-target="#home">Inicio</button>
+            <button type="button" class="mobile-link" data-scroll-target="#about">Sobre mi</button>
+            <button type="button" class="mobile-link" data-scroll-target="#skills">Skills</button>
+            <button type="button" class="mobile-link" data-scroll-target="#projects">Proyectos</button>
+            <button type="button" class="mobile-link" data-scroll-target="#contact">Contacto</button>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section id="home" class="hero section-pad">
+          <div class="hero-backdrop" aria-hidden="true">
+            <div class="glow glow-a"></div>
+            <div class="glow glow-b"></div>
+            <div class="glow glow-c"></div>
+            <div class="grid-fade"></div>
+          </div>
+
+          <div class="container hero-layout">
+            <div class="hero-copy reveal" data-delay="0">
+              <p class="eyebrow">Frontend developer in progress</p>
+              <h1>
+                Diseño experiencias web limpias, funcionales y con
+                <span class="grad-text">caracter</span>.
+              </h1>
+              <p class="hero-role">Shakiara Feliciano | Computer Science Student</p>
+              <p class="hero-lead">
+                Estoy construyendo proyectos que mezclan estructura, interfaz y logica con una meta
+                clara: convertir ideas en experiencias web utiles y bien presentadas.
+              </p>
+
+              <div class="hero-actions">
+                <button type="button" class="glow-btn ui-btn ui-btn-primary" data-scroll-target="#projects">
+                  <span class="glow-inner">Ver proyectos</span>
+                </button>
+                <a class="glow-btn-secondary ui-btn ui-btn-secondary" href="/ui-showcase">
+                  <span class="glow-inner">Explorar UI Showcase</span>
+                </a>
+              </div>
+
+              <div class="hero-links">
+                <a href="https://github.com/Shakiara" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+                <a href="mailto:shakiara.feliciano@gmail.com">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  Email
+                </a>
+                <a href="#contact" data-scroll-target="#contact">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  Contacto
+                </a>
+              </div>
+            </div>
+
+            <aside class="hero-panel reveal" data-delay="120" aria-label="Resumen profesional">
+              <div class="hero-panel-card">
+                <p class="panel-label">Ahora mismo</p>
+                <strong>Construyendo una base fuerte en frontend y full stack</strong>
+                <p>
+                  Trabajo con HTML, CSS y JavaScript, y estoy expandiendo mis proyectos hacia APIs,
+                  validaciones, almacenamiento y mejores flujos de usuario.
+                </p>
+              </div>
+
+              <div class="hero-metrics">
+                <article class="metric-card">
+                  <span>HTML/CSS</span>
+                  <strong>Base solida</strong>
+                </article>
+                <article class="metric-card">
+                  <span>JavaScript</span>
+                  <strong>En crecimiento</strong>
+                </article>
+                <article class="metric-card">
+                  <span>UI Systems</span>
+                  <strong>En practica</strong>
+                </article>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="about" class="section-pad section-surface">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Sobre mi</p>
+              <h2 class="section-title">Aprendo construyendo y mejorando interfaces reales</h2>
+            </div>
+
+            <div class="about-grid">
+              <div class="about-copy reveal" data-delay="40">
+                <p>
+                  Soy estudiante de Ciencias de Computadoras y me interesa especialmente el desarrollo
+                  web porque combina creatividad, estructura y resolucion de problemas.
+                </p>
+                <p>
+                  Me gusta trabajar en interfaces que se sientan claras, ordenadas y visualmente
+                  cuidadas. Tambien me interesa entender el flujo completo de una aplicacion, no solo la
+                  capa visual.
+                </p>
+                <p>
+                  Este portafolio refleja ese proceso: cada proyecto me ayuda a practicar mejor
+                  organizacion, mejor diseño y una implementacion mas confiable.
+                </p>
+              </div>
+
+              <div class="about-stack reveal" data-delay="120">
+                <article class="about-highlight">
+                  <i class="fa-solid fa-code" aria-hidden="true"></i>
+                  <div>
+                    <strong>Codigo organizado</strong>
+                    <p>Priorizo legibilidad, estructura y bases que se puedan seguir mejorando.</p>
+                  </div>
+                </article>
+                <article class="about-highlight">
+                  <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                  <div>
+                    <strong>UI con intencion</strong>
+                    <p>No me interesa una pagina generica: busco que cada interfaz tenga identidad.</p>
+                  </div>
+                </article>
+                <article class="about-highlight">
+                  <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                  <div>
+                    <strong>Vision full stack</strong>
+                    <p>Estoy ampliando mis proyectos para conectar frontend, backend y datos.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="section-pad">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Habilidades</p>
+              <h2 class="section-title">Tecnologias y herramientas con las que estoy creciendo</h2>
+            </div>
+
+            <div class="skills-grid">
+              <article class="skills-card reveal" data-delay="0">
+                <h3>Frontend</h3>
+                <div class="skill-list">
+                  <div class="skill-row">
+                    <div><span>HTML</span><span>90%</span></div>
+                    <div class="skill-track"><div class="skill-progress" data-level="90"></div></div>
+                  </div>
+                  <div class="skill-row">
+                    <div><span>CSS</span><span>85%</span></div>
+                    <div class="skill-track"><div class="skill-progress" data-level="85"></div></div>
+                  </div>
+                  <div class="skill-row">
+                    <div><span>JavaScript</span><span>68%</span></div>
+                    <div class="skill-track"><div class="skill-progress" data-level="68"></div></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="skills-card reveal" data-delay="120">
+                <h3>Backend y datos</h3>
+                <div class="skill-list">
+                  <div class="skill-row">
+                    <div><span>Node.js</span><span>45%</span></div>
+                    <div class="skill-track"><div class="skill-progress" data-level="45"></div></div>
+                  </div>
+                  <div class="skill-row">
+                    <div><span>APIs</span><span>42%</span></div>
+                    <div class="skill-track"><div class="skill-progress" data-level="42"></div></div>
+                  </div>
+                  <div class="skill-row">
+                    <div><span>MySQL</span><span>35%</span></div>
+                    <div class="skill-track"><div class="skill-progress" data-level="35"></div></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="skills-card reveal" data-delay="240">
+                <h3>Herramientas</h3>
+                <div class="tool-cloud">
+                  <span>GitHub</span>
+                  <span>VS Code</span>
+                  <span>Figma</span>
+                  <span>Postman</span>
+                  <span>Responsive Design</span>
+                  <span>UI Experiments</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section-pad section-surface">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Proyectos</p>
+              <h2 class="section-title">Trabajo reciente y ejercicios que muestran mi crecimiento</h2>
+            </div>
+
+            <div class="projects-grid" id="projects-grid"></div>
+          </div>
+        </section>
+
+        <section id="contact" class="section-pad">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Contacto</p>
+              <h2 class="section-title">Si quieres colaborar o seguir mi trabajo, aqui me encuentras</h2>
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-copy-block reveal" data-delay="0">
+                <h3 class="contact-title">Vamos a hablar</h3>
+                <p class="contact-copy">
+                  Estoy abierta a oportunidades para seguir aprendiendo, construir proyectos y mejorar
+                  como desarrolladora. Si tienes una idea, una colaboracion o simplemente quieres ver mas
+                  de mi trabajo, puedes escribirme.
+                </p>
+
+                <div class="contact-cards">
+                  <a class="contact-card" href="mailto:shakiara.feliciano@gmail.com">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <div>
+                      <strong>Email</strong>
+                      <span>shakiara.feliciano@gmail.com</span>
+                    </div>
+                  </a>
+                  <a class="contact-card" href="https://github.com/Shakiara" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <div>
+                      <strong>GitHub</strong>
+                      <span>@Shakiara</span>
+                    </div>
+                  </a>
+                  <div class="contact-card">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <div>
+                      <strong>Ubicacion</strong>
+                      <span>Puerto Rico</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form id="contact-form" class="contact-form reveal" data-delay="120" accept-charset="UTF-8">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" required placeholder="Tu nombre" />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+
+                <label for="message">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Cuéntame sobre tu proyecto o idea"
+                ></textarea>
+
+                <button type="submit" class="glow-btn ui-btn ui-btn-primary full-width">
+                  <span class="glow-inner">Preparar mensaje</span>
+                </button>
+                <p id="contact-feedback" class="contact-feedback" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p>Hecho con dedicacion por Shakiara Feliciano.</p>
+          <p id="copyright-year"></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../scripts/portafolio.js"></script>
+  </body>
 </html>
