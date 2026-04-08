@@ -29,8 +29,6 @@ This project is meant to showcase:
 
 ## Live Deployment
 
-Once GitHub Pages is enabled for this repository, the public URLs are:
-
 - Portfolio: [https://shakiara.github.io/MyPortafolio/](https://shakiara.github.io/MyPortafolio/)
 - UI Showcase: [https://shakiara.github.io/MyPortafolio/ui-showcase.html](https://shakiara.github.io/MyPortafolio/ui-showcase.html)
 
