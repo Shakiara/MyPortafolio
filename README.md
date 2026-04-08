@@ -36,16 +36,6 @@ Once GitHub Pages is enabled for this repository, the public URLs are:
 
 The repository now includes a GitHub Pages workflow to publish the site automatically from `main`.
 
-## Screenshots
-
-### Portfolio
-
-![Portfolio preview](./media/portfolio-preview.svg)
-
-### UI Showcase
-
-![UI Showcase preview](./media/ui-showcase-preview.svg)
-
 ## Tech Stack
 
 - HTML
@@ -166,62 +156,8 @@ The current design direction is:
 - clearer contact section
 - more honest project framing without fake demo promises
 
-## Resume Download
-
-The project now includes a downloadable resume file:
-
-- [Shakiara-Feliciano-Resume.txt](./media/Shakiara-Feliciano-Resume.txt)
-
-## Known Scope
-
-This is still a frontend portfolio, not a database-backed application.
-
-There is no full backend for:
-
-- storing contact form submissions
-- user accounts
-- admin dashboards
-- databases
-
-The Node server exists so the project can run cleanly through `npm`, serve routes reliably, and be easier to share.
-<<<<<<< HEAD
-=======
-
-## If You Upload It To GitHub
-
-Anyone who clones the repo can run it with:
-
-```bash
-git clone https://github.com/Shakiara/MyPortafolio.git
-cd MyPortafolio
-npm start
-Then open:
-
-http://127.0.0.1:3000
-
-Suggested Next Improvements
-replace the text resume with a polished PDF version
-add more real projects with public live demos
-capture real screenshots from the live site and replace the SVG preview cards
-optionally migrate later to a small component-based stack such as Vite + React or Astro if the portfolio grows
-## If You Upload It To GitHub
-
-Anyone who clones the repo can run it with:
-
-```bash
-git clone https://github.com/Shakiara/MyPortafolio.git
-cd MyPortafolio
-npm start
-```
-
-Then open:
-
-[http://127.0.0.1:3000](http://127.0.0.1:3000)
-
-## Suggested Next Improvements
+## Next Improvements
 
 - replace the text resume with a polished PDF version
 - add more real projects with public live demos
-- capture real screenshots from the live site and replace the SVG preview cards
-- optionally migrate later to a small component-based stack such as Vite + React or Astro if the portfolio grows
->>>>>>> 7bfbd58 (Update portfolio content, README, assets, and deployment setup)
+
