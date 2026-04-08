@@ -16,7 +16,7 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript"],
     iconClass: "fa-solid fa-id-card",
     tone: "Portfolio",
-    demoUrl: "/",
+    demoUrl: "./index.html",
     codeUrl: "https://github.com/Shakiara/MyPortafolio"
   },
   {
@@ -26,37 +26,7 @@ const PROJECTS = [
     tags: ["UI", "CSS", "JavaScript"],
     iconClass: "fa-solid fa-shapes",
     tone: "Design system",
-    demoUrl: "/ui-showcase",
-    codeUrl: "https://github.com/Shakiara/MyPortafolio"
-  },
-  {
-    title: "To-Do List App",
-    description:
-      "Ejercicio para practicar eventos, render dinamico, estados vacios y persistencia basica del lado cliente.",
-    tags: ["JavaScript", "DOM", "UX"],
-    iconClass: "fa-solid fa-list-check",
-    tone: "Practice app",
-    demoUrl: null,
-    codeUrl: "https://github.com/Shakiara/MyPortafolio"
-  },
-  {
-    title: "Calculator",
-    description:
-      "Proyecto de logica interactiva enfocado en operaciones, botones de control y feedback instantaneo al usuario.",
-    tags: ["Logic", "JavaScript", "UI"],
-    iconClass: "fa-solid fa-calculator",
-    tone: "Logic",
-    demoUrl: null,
-    codeUrl: "https://github.com/Shakiara/MyPortafolio"
-  },
-  {
-    title: "Form Validation",
-    description:
-      "Ejercicio orientado a validacion en cliente, mensajes de error claros y mejores flujos de formulario.",
-    tags: ["Forms", "Validation", "Frontend"],
-    iconClass: "fa-solid fa-square-check",
-    tone: "Forms",
-    demoUrl: null,
+    demoUrl: "./ui-showcase.html",
     codeUrl: "https://github.com/Shakiara/MyPortafolio"
   }
 ];

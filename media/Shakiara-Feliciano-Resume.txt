@@ -1,0 +1,35 @@
+SHAKIARA FELICIANO
+Frontend Developer in Progress | Computer Science Student
+Puerto Rico
+GitHub: https://github.com/Shakiara
+Email: shakiara.feliciano@gmail.com
+
+PROFILE
+Student developer focused on web interfaces, frontend structure, and practical projects that help grow into full stack development. Interested in HTML, CSS, JavaScript, UI design, and improving user experience through cleaner implementation and better visual communication.
+
+SKILLS
+- HTML
+- CSS
+- JavaScript
+- Responsive Design
+- GitHub
+- VS Code
+- Figma
+- UI Experiments
+- Basic API and backend concepts
+
+PROJECTS
+1. Dev Companion
+   Web app for organizing projects, ideas, errors, and notes with authentication, dashboard, and admin tools.
+
+2. MyPortafolio
+   Personal portfolio focused on visual presentation, responsive layout, and frontend identity.
+
+3. UI Showcase
+   Interactive page with UI experiments, patterns, and component behavior demos.
+
+EDUCATION
+Computer Science Student
+
+GOAL
+Continue building practical projects that strengthen frontend foundations while expanding into backend logic, APIs, and more complete application architecture.
