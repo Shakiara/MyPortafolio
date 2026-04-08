@@ -150,25 +150,3 @@ There is no full backend for:
 - databases
 
 The Node server exists so the project can run cleanly through `npm`, serve routes reliably, and be easier to share.
-
-## If You Upload It To GitHub
-
-Anyone who clones the repo can run it with:
-
-```bash
-git clone https://github.com/Shakiara/MyPortafolio.git
-cd MyPortafolio
-npm start
-```
-
-Then open:
-
-[http://127.0.0.1:3000](http://127.0.0.1:3000)
-
-## Suggested Next Improvements
-
-- add real deployment link in the README
-- add a downloadable resume
-- replace any remaining placeholder project destinations with live demos
-- add screenshots for the portfolio and UI showcase
-- optionally migrate to a small component-based frontend stack later
