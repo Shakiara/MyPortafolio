@@ -6,7 +6,7 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript", "Node.js"],
     iconClass: "fa-solid fa-rocket",
     tone: "Full stack",
-    demoUrl: null,
+    demoUrl: "https://dev-companion.onrender.com",
     codeUrl: "https://github.com/Shakiara/Dev_Companion"
   },
   {
